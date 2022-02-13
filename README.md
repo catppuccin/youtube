@@ -18,7 +18,7 @@
 ## Usage
 
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
-2. Then install with Stylus - [Click Here](https://github.com/elkrien/YouTube-Catppuccin/raw/master/YouTubeCatppuccin.user.css) 
+2. Then install with Stylus - [Click Here](https://github.com/elkrien/YouTube-Catppuccin/raw/main/YouTubeCatppuccin.user.css) 
 
 ## 💝 Thanks to
 
