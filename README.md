@@ -5,20 +5,20 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 <p align="center">
-    <a href="https://github.com/elkrien/YouTube-Catppuccin/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/elkrien/YouTube-Catppuccin?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=1e1e28"></a>
-    <a href="https://github.com/elkrien/YouTube-Catppuccin/issues"><img src="https://img.shields.io/github/issues/elkrien/YouTube-Catppuccin?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
-    <a href="https://github.com/elkrien/YouTube-Catppuccin/contributors"><img src="https://img.shields.io/github/contributors/elkrien/YouTube-Catppuccin?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/YouTube/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/catppuccin/YouTube?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=1e1e28"></a>
+    <a href="https://github.com/catppuccin/YouTube/issues"><img src="https://img.shields.io/github/issues/catppuccin/YouTube?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/YouTube/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/YouTube?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/elkrien/YouTube-Catppuccin/main/assets/cat-youtube.png"/>
+  <img src="https://raw.githubusercontent.com/catppuccin/YouTube/main/assets/cat-youtube.png"/>
 </p>
 
 
 ## Usage
 
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
-2. Then install with Stylus - [Click Here](https://github.com/elkrien/YouTube-Catppuccin/raw/main/YouTubeCatppuccin.user.css)
+2. Then install with Stylus - [Click Here](https://github.com/catppuccin/YouTube/raw/main/YouTubeCatppuccin.user.css)
 3. Choose Your accent color by Setting Theme in Stylus Options.
 
 ## 💝 Thanks to
