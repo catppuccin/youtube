@@ -2,7 +2,7 @@
 @name YouTube Catppuccin
 @namespace github.com/elkrien/YouTube-Catppuccin
 @homepageURL https://github.com/elkrien/YouTube-Catppuccin
-@version 1.0
+@version 1.1
 @updateURL https://raw.githubusercontent.com/elkrien/YouTube-Catppuccin/main/YouTubeCatppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author elkrien based on RaitaroH Youtube-DeepDark (github.com/RaitaroH/YouTube-DeepDark)
@@ -22,14 +22,14 @@
 	"Catppuccin-Teal",
 	"Catppuccin-Blue",
 	"Catppuccin-Sky",
-    "Catppuccin-Maroon",
+  "Catppuccin-Maroon",
 	"Custom"
 ]
 
 @var checkbox join-color "Use dark join button" 0
 @var checkbox subscribe-color "Use dark subscribe button" 0
 
-@var text scrollbar_width "Scrollbar width" 8px
+@var text scrollbar_width "Scrollbar width" 6px
 @var color scrollbar_track "Scrollbar background" "rgba(0,0,0, 0)"
 
 @var color mainColor "Custom main color" "#367bf0"
@@ -115,7 +115,7 @@
 			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
 		}
 		else if stylus-deepdark-style == "Catppuccin-Yellow" {
-            --main-color: #FAE3B0;
+			--main-color: #FAE3B0;
 			--main-background: #1E1E2E;
 			--second-background: #1A1826;
 			--hover-background: #302D41;
@@ -123,7 +123,7 @@
 			--dimmer-text: #C3BAC6;
 			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
 		}
-		else if stylus-deepdark-style == "Catppuccin-Teal" {
+		ese if stylus-deepdark-style == "Catppuccin-Teal" {
 			--main-color: #B5E8E0;
 			--main-background: #1E1E2E;
 			--second-background: #1A1826;
@@ -1188,7 +1188,7 @@
 	tp-yt-paper-button.ytd-subscribe-button-renderer,
 	ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer
 	{
-		color: var(--main-text) !important;
+		color: var(--main-background) !important;
 	}
 	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer.style-blue-text
 	{
