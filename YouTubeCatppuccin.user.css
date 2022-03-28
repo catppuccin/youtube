@@ -2,7 +2,7 @@
 @name YouTube Catppuccin
 @namespace github.com/elkrien/YouTube-Catppuccin
 @homepageURL https://github.com/elkrien/YouTube-Catppuccin
-@version 1.1
+@version 1.2
 @updateURL https://raw.githubusercontent.com/elkrien/YouTube-Catppuccin/main/YouTubeCatppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author elkrien based on RaitaroH Youtube-DeepDark (github.com/RaitaroH/YouTube-DeepDark)
@@ -1188,7 +1188,7 @@
 	tp-yt-paper-button.ytd-subscribe-button-renderer,
 	ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer
 	{
-		color: var(--main-background) !important;
+		color: var(--main-text) !important;
 	}
 	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer.style-blue-text
 	{
@@ -1205,7 +1205,8 @@
 	ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer,
 	tp-yt-paper-button.ytd-subscribe-button-renderer
 	{
-		background-color: var(--main-color) !important;
+        color: var(--main-background) !important;
+        background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 		box-shadow: var(--shadow) !important;
 	}
@@ -1215,7 +1216,7 @@
 		ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button], /*join button in join window*/
 		ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer /*as of april 2021*/
 		{
-			background-color: var(--second-background) !important;
+            background-color: var(--second-background) !important;
 			border-color: var(--second-background) !important;
 		}
 	}
@@ -2213,7 +2214,7 @@
 		color: var(--dimmer-text) !important;
 		opacity: .8;
 	}
-	.iri-video-count:hover
+	.iri-video-count:hoversponsorblo
 	{
 		color: var(--main-color) !important;
 		opacity: 1 !important;
@@ -2247,7 +2248,8 @@
 	}
 
 	/*SponsorBlock*/
-	#sponsorblockPopup, #sponsorBlockPopupBody, #sponsorBlockPopupContainer
+	#sponsorblockPopup, #sponsorBlockPopupBody, #sponsorBlockPopupContainer,
+	#sponsorBlockPopupContainer .sbControlsMenu-item
 	{
 		background-color: var(--second-background) !important;
 	}
@@ -2274,11 +2276,11 @@
 		background-color: var(--paper-toggle-button-unchecked-bar-color, #000000) !important;
 		opacity: 0.4 !important;
 	}
-	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton
+	#sponsorBlockPopupContainer .sponsorBlockPageBody .sbMediumButton
 	{
-		background: var(--main-color) !important;
+		background-color: var(--main-color) !important;
 	}
-	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton:hover
+	#sponsorBlockPopupContainer .sponsorBlockPageBody .sbMediumButton:hover
 	{
 		filter: brightness(110%);
 	}
