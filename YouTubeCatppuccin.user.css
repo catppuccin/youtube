@@ -230,7 +230,7 @@
 	/*Changed text highlight*/
 	::selection
 	{
-		background: var(--main-color) !important;
+		background: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
 	::-moz-selection
