@@ -18,7 +18,11 @@
 ## Usage
 
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
-2. Then install with Stylus - [Click Here](https://github.com/catppuccin/YouTube/raw/main/YouTubeCatppuccin.user.css)
+2. Then install with Stylus (click on the link):
+  - [🌻 Catppuccin Latte](https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinLatte.user.css)
+  - [🪴 Catppuccin Frappe](https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinFrappe.user.css)
+  - [🌺 Catppuccin Macchiato](https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinMacchiato.user.css)
+  - [🌿 Catppuccin Mocha](https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinMocha.user.css)
 3. Choose Your accent color by Setting Theme in Stylus Options.
 
 ## 💝 Thanks to
