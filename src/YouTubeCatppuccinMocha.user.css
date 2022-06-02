@@ -3602,4 +3602,7 @@
     ytd-hotkey-dialog-section-option-renderer {
         border-color: var(--hover-background) !important;
     }
+    ytd-expandable-metadata-renderer{
+        background: var(--main-background) !important;
+    }
 }
