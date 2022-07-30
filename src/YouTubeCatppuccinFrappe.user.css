@@ -1110,7 +1110,7 @@
     /*as of april 2021*/
     tp-yt-paper-button.ytd-subscribe-button-renderer,
     ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer {
-        color: var(--main-text) !important;
+        color: var(--second-background) !important;
     }
     ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer.style-blue-text {
         color: var(--main-color) !important;
