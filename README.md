@@ -10,9 +10,29 @@
     <a href="https://github.com/catppuccin/YouTube/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/YouTube?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
+
 <p align="center">
-  <img src="assets/cat-youtube.png"/>
+  <img src="https://raw.githubusercontent.com/catppuccin/youtube/main/assets/cat-youtube.png"/>
 </p>
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/youtube/main/assets/youtube-latte.png"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/youtube/main/assets/youtube-frappe.png"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/youtube/main/assets/youtube-macchiato.png"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/youtube/main/assets/youtube-mocha.png"/>
+</details>
 
 
 ## Usage
