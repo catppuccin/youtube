@@ -37,6 +37,7 @@
 @var color mainColor "Custom main color" "#89B4FA"
 @var color mainBackground "Custom main background" "#1E1E2E"
 @var color secondBackground "Custom second background" "#181825"
+@var color playerBackground "Custom player background" "#11111b"
 @var color hoverBackground "Custom hover background" "#313244"
 @var color mainText "Custom main text" "#CDD6F4"
 @var color dimmerText "Custom second text" "#9399B2"
@@ -54,6 +55,7 @@
             --main-color: #A6E3A1;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -63,6 +65,7 @@
             --main-color: #B4BEFE;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -72,6 +75,7 @@
             --main-color: #F2CDCD;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -81,6 +85,7 @@
             --main-color: #CBA6F7;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -90,6 +95,7 @@
             --main-color: #F5C2E7;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -99,6 +105,7 @@
             --main-color: #F38BA8;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -108,6 +115,7 @@
             --main-color: #FAB387;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -117,6 +125,7 @@
             --main-color: #F9E2AF;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -126,6 +135,7 @@
             --main-color: #94E2D5;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -135,6 +145,7 @@
             --main-color: #89B4FA;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -144,6 +155,7 @@
             --main-color: #89DCEB;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -153,6 +165,7 @@
             --main-color: #EBA0AC;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -162,6 +175,7 @@
             --main-color: #74C7EC;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -171,6 +185,7 @@
             --main-color: #F5E0DC;
             --main-background: #1E1E2E;
             --second-background: #181825;
+            --player-background: #11111b;
             --hover-background: #313244;
             --main-text: #CDD6F4;
             --dimmer-text: #9399B2;
@@ -180,6 +195,7 @@
             --main-color: mainColor;
             --main-background: mainBackground;
             --second-background: secondBackground;
+            --player-background: playerBackground;
             --hover-background: hoverBackground;
             --main-text: mainText;
             --dimmer-text: dimmerText;
@@ -242,6 +258,11 @@
     .style-scope.ytd-page-manager.hide-skeleton,
     .account-container {
         background-color: var(--main-background) !important;
+    }
+
+    /*Background for the player*/
+    #movie_player {
+        background-color: var(--player-background) !important
     }
 
     /*Border for the sidemenu*/
