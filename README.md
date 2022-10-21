@@ -44,6 +44,13 @@
   - [🌺 Catppuccin Macchiato](https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinMacchiato.user.css)
   - [🌿 Catppuccin Mocha](https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinMocha.user.css)
 3. Choose Your accent color by Setting Theme in Stylus Options
+<details>
+<summary>
+4. Make sure your base youtube theme is set to light mode
+</summary>
+
+![Help image](./assets/set-to-lightmode.png)
+</details>
 
 ## 💝 Thanks to
 
