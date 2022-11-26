@@ -3601,6 +3601,15 @@
     .sponsorBlockTooltip {
         background-color: var(--hover-background) !important;
     }
+
+    /*Fix like, dislike and share icons and text using wrong color*/
+    .yt-spec-button-shape-next__icon, .ytd-segmented-like-dislike-button-renderer > yt-button-shape > button > .yt-spec-button-shape-next--button-text-content, .ytd-menu-renderer > yt-button-shape > button > .yt-spec-button-shape-next--button-text-content, .yt-spec-button-shape-next > span#text{
+        color: var(--main-text)
+    }
+    /*Player tooltip background*/
+    .ytp-tooltip-text{
+        background: var(--hover-background) !important
+    }
 }
 
 @-moz-document url-prefix('https://www.youtube.com/redirect') {
