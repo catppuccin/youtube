@@ -2126,7 +2126,7 @@
         background-color: var(--second-background) !important;
     }
     /*comments themselves*/
-    #author-text.yt-simple-endpoint.ytd-comment-renderer {
+    #author-text.yt-simple-endpoint.ytd-comment-renderer, #content.style-scope #content-text {
         color: var(--main-text) !important;
     }
     #author-text.yt-simple-endpoint.ytd-comment-renderer:hover {
