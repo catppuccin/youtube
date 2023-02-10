@@ -3005,7 +3005,7 @@
     }
 
     button.yt-icon-button:hover .yt-spec-icon-badge-shape--type-notification .yt-spec-icon-badge-shape__badge {
-        color: var(--main-text) !important;
+        color: var(--main-background) !important;
     }
 
     /*load spinner - also for comments*/
