@@ -3001,6 +3001,7 @@
     .yt-spec-icon-badge-shape--type-notification .yt-spec-icon-badge-shape__badge {
         background-color: var(--main-color) !important;
         border: none !important;
+        color: var(--main-background) !important;
     }
 
     button.yt-icon-button:hover .yt-spec-icon-badge-shape--type-notification .yt-spec-icon-badge-shape__badge {
