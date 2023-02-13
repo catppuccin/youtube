@@ -4277,9 +4277,11 @@
     #logo-container .content-region {
         color: var(--main-text) !important;
     }
+
+    /* Youtube buttons shape */
+    .yt-core-attributed-string--white-space-no-wrap {
+        color: var(--main-color);
+    }
 }
 
-/* Youtube buttons shape */
-.yt-core-attributed-string--white-space-no-wrap {
-    color: var(--main-color);
-}
+
