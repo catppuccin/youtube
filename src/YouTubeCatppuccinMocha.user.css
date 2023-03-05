@@ -4281,5 +4281,6 @@
 
 /* Youtube buttons shape */
 .yt-core-attributed-string--white-space-no-wrap {
-    color: var(--main-color);
+    color: var(--main-text);
 }
+
