@@ -5,9 +5,9 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 <p align="center">
-    <a href="https://github.com/isabelroses/YouTube/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/isabelroses/YouTube?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/isabelroses/YouTube/issues"><img src="https://img.shields.io/github/issues/isabelroses/YouTube?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-    <a href="https://github.com/isabelroses/YouTube/contributors"><img src="https://img.shields.io/github/contributors/isabelroses/YouTube?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/YouTube/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/catppuccin/YouTube?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/YouTube/issues"><img src="https://img.shields.io/github/issues/catppuccin/YouTube?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/YouTube/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/YouTube?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 
