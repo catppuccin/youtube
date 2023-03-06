@@ -54,7 +54,8 @@
 
 ## 💝 Thanks to
 
-- [RaitaroH](https://github.com/RaitaroH/YouTube-DeepDark) - this theme is made by modification of great YouTube-DeepDark theme by RaitaroH
+- [Artilate](https://github.com/artilate/youtube) - this theme is made by modification of great YouTube rose pine theme
+- [Isabel Roses](https://github.com/isabelroses) - code rewrite
 
 &nbsp;
 
