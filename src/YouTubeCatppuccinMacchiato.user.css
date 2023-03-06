@@ -11,35 +11,34 @@
 @preprocessor stylus
 
 @var select stylus-deepdark-style "Preset themes" [
-	"Catppuccin-Mocha-Green",
-	"Catppuccin-Mocha-Flamingo",
-	"Catppuccin-Mocha-Mauve",
-	"Catppuccin-Mocha-Pink",
-	"Catppuccin-Mocha-Lavender",
-	"Catppuccin-Mocha-Red",
-	"Catppuccin-Mocha-Peach",
-	"Catppuccin-Mocha-Yellow",
-	"Catppuccin-Mocha-Teal",
-	"Catppuccin-Mocha-Blue",
-	"Catppuccin-Mocha-Sky",
-    "Catppuccin-Mocha-Maroon",
-    "Catppuccin-Mocha-Sapphire",
-    "Catppuccin-Mocha-Rosewater",
+	"Catppuccin-Macchiato-Green",
+	"Catppuccin-Macchiato-Flamingo",
+	"Catppuccin-Macchiato-Mauve",
+	"Catppuccin-Macchiato-Pink",
+	"Catppuccin-Macchiato-Lavender",
+	"Catppuccin-Macchiato-Red",
+	"Catppuccin-Macchiato-Peach",
+	"Catppuccin-Macchiato-Yellow",
+	"Catppuccin-Macchiato-Teal",
+	"Catppuccin-Macchiato-Blue",
+	"Catppuccin-Macchiato-Sky",
+  "Catppuccin-Macchiato-Maroon",
+  "Catppuccin-Macchiato-Sapphire",
+  "Catppuccin-Macchiato-Rosewater",
 	"Custom"
 ]
 @var checkbox join-color "Use dark join button" 1
 @var checkbox subscribe-color "Use dark subscribe button" 0
 @var text scrollbar_width "Scrollbar width" 6px
 @var color scrollbar_track "Scrollbar background" "rgba(0,0,0, 0)"
-@var color mainColor "Custom main color" "#89B4FA"
-@var color mainBackground "Custom main background" "#1E1E2E"
-@var color secondBackground "Custom second background" "#181825"
-@var color playerBackground "Custom player background" "#11111B"
-@var color hoverBackground "Custom hover background" "#313244"
-@var color mainText "Custom main text" "#CDD6F4"
-@var color dimmerText "Custom second text" "#9399B2"
+@var color mainColor "Custom main color" "#8AADF4"
+@var color mainBackground "Custom main background" "#24273A"
+@var color secondBackground "Custom second background" "#1E2030"
+@var color playerBackground "Custom player background" "#181926"
+@var color hoverBackground "Custom hover background" "#363A4F"
+@var color mainText "Custom main text" "#CAD3F5"
+@var color dimmerText "Custom second text" "#939AB7"
 @var color colorShadow "Custom shadow color" "rgba(56, 60, 74, .3)"
-
 ==/UserStyle== */
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
@@ -49,157 +48,157 @@
     /* Licence    : GNU General Public License v3.0 */
     /*Main color variables*/
     :root {
-        if stylus-deepdark-style=="Catppuccin-Mocha-Green" {
-            --main-color: #A6E3A1;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        if stylus-deepdark-style=="Catppuccin-Macchiato-Green" {
+            --main-color: #A6DA95;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Lavender" {
-            --main-color: #B4BEFE;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Lavender" {
+            --main-color: #B7BDF8;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Flamingo" {
-            --main-color: #F2CDCD;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Flamingo" {
+            --main-color: #F0C6C6;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Mauve" {
-            --main-color: #CBA6F7;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Mauve" {
+            --main-color: #C6A0F6;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Pink" {
-            --main-color: #F5C2E7;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Pink" {
+            --main-color: #F5BDE6;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Red" {
-            --main-color: #F38BA8;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Red" {
+            --main-color: #ED8796;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Peach" {
-            --main-color: #FAB387;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Peach" {
+            --main-color: #F5A97F;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Yellow" {
-            --main-color: #F9E2AF;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Yellow" {
+            --main-color: #EED49F;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Teal" {
-            --main-color: #94E2D5;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Teal" {
+            --main-color: #8BD5CA;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Blue" {
-            --main-color: #89B4FA;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Blue" {
+            --main-color: #8AADF4;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Sky" {
-            --main-color: #89DCEB;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Sky" {
+            --main-color: #91D7E3;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Maroon" {
-            --main-color: #EBA0AC;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Maroon" {
+            --main-color: #EE99A0;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Sapphire" {
-            --main-color: #74C7EC;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Sapphire" {
+            --main-color: #7DC4E4;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Mocha-Rosewater" {
-            --main-color: #F5E0DC;
-            --main-background: #1E1E2E;
-            --second-background: #181825;
-            --player-background: #11111B;
-            --hover-background: #313244;
-            --main-text: #CDD6F4;
-            --dimmer-text: #9399B2;
+        else if stylus-deepdark-style=="Catppuccin-Macchiato-Rosewater" {
+            --main-color: #F4DBD6;
+            --main-background: #24273A;
+            --second-background: #1E2030;
+            --player-background: #181926;
+            --hover-background: #363A4F;
+            --main-text: #CAD3F5;
+            --dimmer-text: #939AB7;
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
