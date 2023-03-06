@@ -1160,6 +1160,9 @@
         box-shadow: var(--shadow) !important;
         color: var(--main-text) !important;
     }
+    .yt-spec-button-shape-next[aria-label^="Subscribe to"] > .yt-spec-button-shape-next--button-text-content > .yt-core-attributed-string {
+        color: var(--main-background) !important;
+    }
     /*unsubscribe confirm dialog*/
     .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text {
         color: var(--main-color) !important;
