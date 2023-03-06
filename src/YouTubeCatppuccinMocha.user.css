@@ -28,7 +28,7 @@
 	"Custom"
 ]
 
-@var checkbox join-color "Use dark join button" 1
+@var checkbox join-color "Use dark join button" 0
 @var checkbox subscribe-color "Use dark subscribe button" 0
 
 @var text scrollbar_width "Scrollbar width" 6px
@@ -214,7 +214,7 @@
         }
     }
 
-    /*Error page*/
+       /*Error page*/
     #error-page {
         background-color: var(--main-background) !important;
         color: var(--main-text) !important;
@@ -829,7 +829,7 @@
     }
 
     /*Video cards*/
-    /*title*/
+    /*ttile*/
     ytd-grid-video-renderer.use-ellipsis #details.ytd-grid-video-renderer a.ytd-grid-video-renderer,
     ytd-compact-video-renderer.use-ellipsis #video-title.ytd-compact-video-renderer,
     .ytd-video-renderer-wiz__video-title,
@@ -1157,7 +1157,7 @@
     .ytp-sb-subscribe,
     a.ytp-sb-subscribe/*in cards... why yt why*/
     {
-        background-color: var(--second-background) !important;
+        background-color: var(--main-color) !important;
         border-color: var(--second-background) !important;
         box-shadow: var(--shadow) !important;
         color: var(--main-text) !important;
@@ -1165,6 +1165,7 @@
     .yt-spec-button-shape-next[aria-label^="Subscribe to"] > .yt-spec-button-shape-next--button-text-content > .yt-core-attributed-string {
         color: var(--main-background) !important;
     }
+    
     /*unsubscribe confirm dialog*/
     .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text {
         color: var(--main-color) !important;
@@ -1176,8 +1177,9 @@
     .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal[aria-label="Join this channel"],
     .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled/*in window*/
     {
-        background-color: var(--second-background) !important;
+        background-color: var(--main-color) !important;
         border-color: var(--second-background) !important;
+        color: var(--main-background) !important;
     }
     /*comment button*/
     ytd-button-renderer#submit-button.ytd-commentbox .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
@@ -1209,21 +1211,32 @@
     if join-color/*overwriting the above*/
     {
         .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal[aria-label="Join this channel"] {
-            background-color: var(--main-color) !important;
-            border-color: var(--main-color) !important;
+            background-color: var(--second-background) !important;
+            border-color: var(second-background) !important;
+            color: var(--main-text) !important;
         }
     }
     if subscribe-color/*overwriting the above*/
     {
         .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled,
+        .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal,
+        /*NOTE: this affects other material buttons - I would say desired effect*/
         .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled,
         .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled:hover,
         /*on shorts*/
+        .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--tonal,
+        .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--tonal:hover,
+        /*on shorts*/
         .ytp-sb-subscribe,
-        a.ytp-sb-subscribe/*in cards*/
+        a.ytp-sb-subscribe/*in cards... why yt why*/
         {
-            background-color: var(--main-color) !important;
-            border-color: var(--main-color) !important;
+            background-color: var(--second-background) !important;
+            border-color: var(--second-background) !important;
+            box-shadow: var(--shadow) !important;
+            color: var(--main-text) !important;
+        }
+        .yt-spec-button-shape-next[aria-label^="Subscribe to"] > .yt-spec-button-shape-next--button-text-content > .yt-core-attributed-string {
+            color: var(--main-text) !important;
         }
     }
     ytd-button-renderer.style-primary[is-paper-button] {
