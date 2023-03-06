@@ -55,6 +55,7 @@
 ## 💝 Thanks to
 
 - [Artilate](https://github.com/artilate/youtube) - this theme is made by modification of great YouTube rose pine theme
+- [Elkrien](https://github.com/elkrien) - v1.0.0 youtube theme
 - [Isabel Roses](https://github.com/isabelroses) - code rewrite
 
 &nbsp;
