@@ -1163,6 +1163,12 @@
         box-shadow: var(--shadow) !important;
         color: var(--main-text) !important;
     }
+	.yt-spec-button-shape-next[aria-label^="Subscribe to"] {
+        background-color: var(--main-color) !important;
+        border-color: var(--second-background) !important;
+        box-shadow: var(--shadow) !important;
+        color: var(--main-text) !important;
+    }
     .yt-spec-button-shape-next[aria-label^="Subscribe to"] > .yt-spec-button-shape-next--button-text-content > .yt-core-attributed-string {
         color: var(--main-background) !important;
     }
