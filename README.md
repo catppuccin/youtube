@@ -5,33 +5,33 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 <p align="center">
-    <a href="https://github.com/catppuccin/YouTube/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/catppuccin/YouTube?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/YouTube/issues"><img src="https://img.shields.io/github/issues/catppuccin/YouTube?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/YouTube/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/YouTube?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+    <a href="https://github.com/isabelroses/YouTube/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/isabelroses/YouTube?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+    <a href="https://github.com/isabelroses/YouTube/issues"><img src="https://img.shields.io/github/issues/isabelroses/YouTube?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+    <a href="https://github.com/isabelroses/YouTube/contributors"><img src="https://img.shields.io/github/contributors/isabelroses/YouTube?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/youtube/main/assets/cat-youtube.png"/>
+  <img src="/assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/youtube/main/assets/youtube-latte.png"/>
+  <img src="/assets/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/youtube/main/assets/youtube-frappe.png"/>
+  <img src="/assets/frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/youtube/main/assets/youtube-macchiato.png"/>
+  <img src="/assets/macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/youtube/main/assets/youtube-mocha.png"/>
+  <img src="/assets/mocha.png"/>
 </details>
 
 
@@ -39,17 +39,17 @@
 
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 2. Then install with Stylus (click on the link):
-  - [🌻 Catppuccin Latte](https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinLatte.user.css)
-  - [🪴 Catppuccin Frappe](https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinFrappe.user.css)
-  - [🌺 Catppuccin Macchiato](https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinMacchiato.user.css)
-  - [🌿 Catppuccin Mocha](https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinMocha.user.css)
+  - [🌻 Catppuccin Latte](/src/YouTubeCatppuccinLatte.user.css)
+  - [🪴 Catppuccin Frappe](/src/YouTubeCatppuccinFrappe.user.css)
+  - [🌺 Catppuccin Macchiato](/src/YouTubeCatppuccinMacchiato.user.css)
+  - [🌿 Catppuccin Mocha](/src/YouTubeCatppuccinMocha.user.css)
 3. Choose Your accent color by Setting Theme in Stylus Options
 <details>
 <summary>
 4. Make sure your base youtube theme is set to light mode
 </summary>
 
-![Help image](./assets/set-to-lightmode.png)
+![Help image](/assets/set-to-lightmode.png)
 </details>
 
 ## 💝 Thanks to
