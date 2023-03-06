@@ -28,7 +28,7 @@
 	"Custom"
 ]
 
-@var checkbox join-color "Use dark join button" 1
+@var checkbox join-color "Use dark join button" 0
 @var checkbox subscribe-color "Use dark subscribe button" 0
 
 @var text scrollbar_width "Scrollbar width" 6px
