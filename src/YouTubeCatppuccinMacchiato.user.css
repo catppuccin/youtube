@@ -2140,6 +2140,10 @@
         color: var(--dimmer-text) !important;
     }
 
+	.yt-core-attributed-string__link--call-to-action-color {
+        color: var(--dimmer-text) !important;
+    }
+	
     /*Comments*/
     yt-formatted-string.ytd-comments-header-renderer,
     #contenteditable-root.yt-formatted-string[aria-label].yt-formatted-string:empty::before,
