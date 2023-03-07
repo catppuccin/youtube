@@ -46,11 +46,6 @@
 ==/UserStyle== */
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
-  /* Author     : Theme made by RaitaroH & modified for Catppuccin by elkrien */
-  /* Co-authors : https://github.com/MechaLynx https://github.com/MaximeRF */
-  /* Home       : https://github.com/catppuccin/YouTube */
-  /* Licence    : GNU General Public License v3.0 */
-  /*Main color variables*/
   :root {
     if stylus-ctp-style=="Catppuccin-Frappe-Green" {
       --main-color: #A6D189;
