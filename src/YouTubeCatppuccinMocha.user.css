@@ -2,7 +2,7 @@
 @name YouTube Catppuccin-Mocha
 @namespace github.com/catppuccin/YouTube
 @homepageURL https://github.com/catppuccin/YouTube
-@version 2.0.0
+@version 2.0.1
 @updateURL https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinMocha.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -4279,8 +4279,27 @@
     ytd-hotkey-dialog-section-option-renderer {
         border-color: var(--hover-background) !important;
     }
-
-
+	
+	/*clip share*/
+	.ytd-clip-section-renderer {
+		background-color: var(--main-background) !important;
+	}	
+	
+	.yt-spec-button-shape-next[aria-label="Share clip"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
+		color: var(--main-background) !important;
+	}
+	
+	.yt-spec-button-shape-next[aria-label="Share clip"] {
+		background-color:  var(--main-color) !important;
+	}
+	
+	/*Watch on YouTube*/
+	#offer-module .ytd-watch-next-secondary-results-renderer,
+	#offer-module .ytd-tvfilm-offer-module-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	
     /*SponsorBlock*/
     /*logo change*/
     #sponsorBlockPopupLogo,
