@@ -218,7 +218,7 @@
         }
     }
 
-    /*Error page*/
+        /*Error page*/
     #error-page, #error-page-content  {
         background-color: var(--main-background) !important;
     }
@@ -244,7 +244,8 @@
     #error-page-content #yt-masthead #masthead-search #masthead-search-terms-border .search-button {
         background-color: var(--secondary-background) !important;
     }
-
+    
+      
     * {
         scrollbar-color: var(--main-color) scrollbar_track !important;
         scrollbar-width: thin !important;
@@ -1182,12 +1183,12 @@
     .ytp-sb-subscribe,
     a.ytp-sb-subscribe/*in cards... why yt why*/
     {
-        background-color: var(--main-color) !important;
+        background-color: var(--second-background) !important;
         border-color: var(--second-background) !important;
         box-shadow: var(--shadow) !important;
         color: var(--main-text) !important;
     }
-	.yt-spec-button-shape-next[aria-label^="Subscribe to"] {
+    .yt-spec-button-shape-next[aria-label^="Subscribe to"] {
         background-color: var(--main-color) !important;
         border-color: var(--second-background) !important;
         box-shadow: var(--shadow) !important;
@@ -2133,7 +2134,7 @@
     /*Search results related to item searched*/
     a.ytd-search-refinement-card-renderer {
         background-color: var(--second-background) !important;
-        border-color: var(--hover-background) !important;
+        border-color: var(--second-background) !important;
         border-radius: 8px !important;
     }
     a.ytd-search-refinement-card-renderer:hover #card-title.ytd-search-refinement-card-renderer div.ytd-search-refinement-card-renderer {
@@ -2164,8 +2165,8 @@
     #description-text.ytd-video-renderer {
         color: var(--dimmer-text) !important;
     }
-	
-	.yt-core-attributed-string__link--call-to-action-color {
+    
+    .yt-core-attributed-string__link--call-to-action-color {
         color: var(--dimmer-text) !important;
     }
 
@@ -3628,6 +3629,10 @@
         border-color: var(--second-background) !important;
         color: var(--main-text) !important;
     }
+    /*Fix like, dislike and share icons and text using wrong color*/
+    .yt-spec-button-shape-next__icon, .ytd-segmented-like-dislike-button-renderer > yt-button-shape > button > .yt-spec-button-shape-next--button-text-content, .ytd-menu-renderer > yt-button-shape > button > .yt-spec-button-shape-next--button-text-content, .yt-spec-button-shape-next > span#text{
+        color: var(--main-text)
+    }
     /*Player tooltip background*/
     .ytp-tooltip-text{
         background: var(--hover-background) !important
@@ -3705,8 +3710,8 @@
     .sponsorBlockTooltip {
         background-color: var(--hover-background) !important;
     }
+    
 }
-
 @-moz-document url-prefix('https://www.youtube.com/redirect') {
     /*Are you sure you want to leave YouTube? redirect*/
     /*seems like youtube will never update this page so, yeah*/
