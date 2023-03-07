@@ -214,10 +214,31 @@
         }
     }
 
-       /*Error page*/
-    #error-page {
+    /*Error page*/
+    #error-page, #error-page-content  {
         background-color: var(--main-background) !important;
+    }
+    
+     #error-page-content > p,
+     #yt-masthead #logo-container .content-region {
+         color: var(--main-text) !important;
+         text-shadow: none;
+     }
+     
+     #yt-masthead #logo-container .logo, /*error page*/{
+        filter: invert(1) grayscale(1);
+    }
+    
+    #error-page-content #yt-masthead #masthead-search #masthead-search-terms-border input[type="text"] {
         color: var(--main-text) !important;
+    }
+    
+    #error-page-content #yt-masthead #masthead-search #masthead-search-terms-border input[type="text"]:focus {
+        color: var(--main-color) !important;
+    }
+    
+    #error-page-content #yt-masthead #masthead-search #masthead-search-terms-border .search-button {
+        background-color: var(--secondary-background) !important;
     }
 
     * {
