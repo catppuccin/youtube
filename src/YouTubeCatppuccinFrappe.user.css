@@ -44,7 +44,7 @@
 @var color colorShadow "Custom shadow color" "rgba(56, 60, 74, .3)"
 
 ==/UserStyle== */
-@-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
+@-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
     /* Author     : Theme made by RaitaroH & modified for Catppuccin by elkrien */
     /* Co-authors : https://github.com/MechaLynx https://github.com/MaximeRF */

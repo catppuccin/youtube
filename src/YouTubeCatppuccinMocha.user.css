@@ -44,7 +44,7 @@
 @var color colorShadow "Custom shadow color" "rgba(56, 60, 74, .3)"
 
 ==/UserStyle== */
-@-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
+@-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
     /*Main color variables*/
     :root {
