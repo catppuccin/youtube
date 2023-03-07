@@ -214,7 +214,7 @@
         }
     }
 
-        /*Error page*/
+    /*Error page*/
     #error-page, #error-page-content  {
         background-color: var(--main-background) !important;
     }
@@ -225,7 +225,7 @@
          text-shadow: none;
      }
      
-     #yt-masthead #logo-container .logo, /*error page*/{
+     #yt-masthead #logo-container .logo, {
         filter: invert(1) grayscale(1);
     }
     
@@ -566,6 +566,9 @@
     /*your selection*/
     tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .progress-bar.ytd-backstage-poll-renderer {
         background-color: var(--main-color) !important;
+    }
+    tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .choice-info .choice-text {
+            color: var(--main-text) !important;
     }
     /*other bars*/
     .progress-bar.ytd-backstage-poll-renderer {
