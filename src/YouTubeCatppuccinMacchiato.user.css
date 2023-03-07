@@ -10,7 +10,7 @@
 
 @preprocessor stylus
 
-@var select stylus-deepdark-style "Preset themes" [
+@var select stylus-ctp-style "Preset themes" [
 	"Catppuccin-Macchiato-Green",
 	"Catppuccin-Macchiato-Flamingo",
 	"Catppuccin-Macchiato-Mauve",
@@ -49,7 +49,7 @@
     /* Licence    : GNU General Public License v3.0 */
     /*Main color variables*/
     :root {
-        if stylus-deepdark-style=="Catppuccin-Macchiato-Green" {
+        if stylus-ctp-style=="Catppuccin-Macchiato-Green" {
             --main-color: #A6DA95;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -60,7 +60,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Lavender" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Lavender" {
             --main-color: #B7BDF8;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -71,7 +71,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Flamingo" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Flamingo" {
             --main-color: #F0C6C6;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -82,7 +82,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Mauve" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Mauve" {
             --main-color: #C6A0F6;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -93,7 +93,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Pink" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Pink" {
             --main-color: #F5BDE6;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -104,7 +104,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Red" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Red" {
             --main-color: #ED8796;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -115,7 +115,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Peach" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Peach" {
             --main-color: #F5A97F;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -126,7 +126,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Yellow" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Yellow" {
             --main-color: #EED49F;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -137,7 +137,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Teal" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Teal" {
             --main-color: #8BD5CA;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -148,7 +148,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Blue" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Blue" {
             --main-color: #8AADF4;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -159,7 +159,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Sky" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Sky" {
             --main-color: #91D7E3;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -170,7 +170,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Maroon" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Maroon" {
             --main-color: #EE99A0;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -181,7 +181,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Sapphire" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Sapphire" {
             --main-color: #7DC4E4;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -192,7 +192,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Macchiato-Rosewater" {
+        else if stylus-ctp-style=="Catppuccin-Macchiato-Rosewater" {
             --main-color: #F4DBD6;
             --main-background: #24273A;
             --second-background: #1E2030;
@@ -203,7 +203,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Custom" {
+        else if stylus-ctp-style=="Custom" {
             --main-color: mainColor;
             --main-background: mainBackground;
             --second-background: secondBackground;

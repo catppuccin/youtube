@@ -10,7 +10,7 @@
 
 @preprocessor stylus
 
-@var select stylus-deepdark-style "Preset themes" [
+@var select stylus-ctp-style "Preset themes" [
 	"Catppuccin-Frappe-Green",
 	"Catppuccin-Frappe-Flamingo",
 	"Catppuccin-Frappe-Mauve",
@@ -52,7 +52,7 @@
     /* Licence    : GNU General Public License v3.0 */
     /*Main color variables*/
     :root {
-        if stylus-deepdark-style=="Catppuccin-Frappe-Green" {
+        if stylus-ctp-style=="Catppuccin-Frappe-Green" {
             --main-color: #A6D189;
             --main-background: #303446;
             --second-background: #292C3C;
@@ -63,7 +63,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Frappe-Lavender" {
+        else if stylus-ctp-style=="Catppuccin-Frappe-Lavender" {
             --main-color: #BABBF1;
             --main-background: #303446;
             --second-background: #292C3C;
@@ -74,7 +74,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Frappe-Flamingo" {
+        else if stylus-ctp-style=="Catppuccin-Frappe-Flamingo" {
             --main-color: #EEBEBE;
             --main-background: #303446;
             --second-background: #292C3C;
@@ -85,7 +85,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Frappe-Mauve" {
+        else if stylus-ctp-style=="Catppuccin-Frappe-Mauve" {
             --main-color: #CA9EE6;
             --main-background: #303446;
             --second-background: #292C3C;
@@ -96,7 +96,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Frappe-Pink" {
+        else if stylus-ctp-style=="Catppuccin-Frappe-Pink" {
             --main-color: #F4B8E4;
             --main-background: #303446;
             --second-background: #292C3C;
@@ -107,7 +107,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Frappe-Red" {
+        else if stylus-ctp-style=="Catppuccin-Frappe-Red" {
             --main-color: #E78284;
             --main-background: #303446;
             --second-background: #292C3C;
@@ -118,7 +118,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Frappe-Peach" {
+        else if stylus-ctp-style=="Catppuccin-Frappe-Peach" {
             --main-color: #EF9F76;
             --main-background: #303446;
             --second-background: #292C3C;
@@ -129,7 +129,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Frappe-Yellow" {
+        else if stylus-ctp-style=="Catppuccin-Frappe-Yellow" {
             --main-color: #E5C890;
             --main-background: #303446;
             --second-background: #292C3C;
@@ -140,7 +140,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Frappe-Teal" {
+        else if stylus-ctp-style=="Catppuccin-Frappe-Teal" {
             --main-color: #81C8BE;
             --main-background: #303446;
             --second-background: #292C3C;
@@ -151,7 +151,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Frappe-Blue" {
+        else if stylus-ctp-style=="Catppuccin-Frappe-Blue" {
             --main-color: #8CAAEE;
             --main-background: #303446;
             --second-background: #292C3C;
@@ -162,7 +162,7 @@
             --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
         }
 
-        else if stylus-deepdark-style=="Catppuccin-Frappe-Sky" {
+        else if stylus-ctp-style=="Catppuccin-Frappe-Sky" {
             --main-color: #99D1DB;
             --main-background: #303446;
             --second-background: #292C3C;
