@@ -5,7 +5,7 @@
 @version 2.0.0
 @updateURL https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinMacchiato.user.css
 @description Soothing pastel theme for YouTube
-@author isabelroses (based on rosepine)
+@author isabelroses
 @license GNU-V3.0
 
 @preprocessor stylus
@@ -27,10 +27,13 @@
   "Catppuccin-Macchiato-Rosewater",
 	"Custom"
 ]
+
 @var checkbox join-color "Use dark join button" 0
 @var checkbox subscribe-color "Use dark subscribe button" 0
+
 @var text scrollbar_width "Scrollbar width" 6px
 @var color scrollbar_track "Scrollbar background" "rgba(0,0,0, 0)"
+
 @var color mainColor "Custom main color" "#8AADF4"
 @var color mainBackground "Custom main background" "#24273A"
 @var color secondBackground "Custom second background" "#1E2030"
@@ -43,10 +46,6 @@
 ==/UserStyle== */
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
-  /* Author     : Theme made by RaitaroH & modified for Catppuccin by elkrien */
-  /* Co-authors : https://github.com/MechaLynx https://github.com/MaximeRF */
-  /* Home       : https://github.com/catppuccin/YouTube */
-  /* Licence    : GNU General Public License v3.0 */
   /*Main color variables*/
   :root {
     if stylus-ctp-style=="Catppuccin-Macchiato-Green" {
@@ -623,6 +622,11 @@
     background-color: var(--main-color) !important;
   }
 
+  tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .choice-info .choice-text,
+  tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .choice-info .vote-percentage {
+    color: var(--highlighted-text) !important;
+  }
+
   /*other bars*/
   .progress-bar.ytd-backstage-poll-renderer {
     background-color: var(--second-background) !important;
@@ -948,7 +952,7 @@
   }
 
   /*Join this channel panel > Join button,
-	  Settings > Advanced settings > Copy button*/
+  	  Settings > Advanced settings > Copy button*/
   yt-button-renderer.ytd-sponsorships-tier-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled,
   yt-button-renderer.yt-copy-link-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
     background-color: var(--main-color) !important;
@@ -1783,7 +1787,6 @@
 
   .ytp-large-play-button.ytp-button.ytp-red2:hover,
   .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button.ytp-button.ytp-red2 {
-    /*background-image: url(https://github.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/
     background-image: url(https://s.ytimg.com/yts/img/large_play_button_ringo-vfljWXIdx.png) !important;
     filter: invert(100%) brightness(300%);
   }
@@ -3574,9 +3577,9 @@
 
   /*"Best" of YouTube icons in sidepane*/
   /*.style-scope.ytd-guide-entry-renderer.no-transition
-	{
-		filter: grayscale(100%);
-	}*/
+  	{
+  		filter: grayscale(100%);
+  	}*/
   /* Promo page */
   body.yt-new-promo-page-use-launched-copy .yt-new-promo-page-header {
     background: var(--main-background) !important;
@@ -3613,13 +3616,13 @@
 
   /*like/dislike buttons in nested replies*/
   /*.style-scope.ytd-toggle-button-renderer svg
-	{
-		fill: var(--dimmer-text) !important;
-	}
-	.style-scope.ytd-toggle-button-renderer yt-icon-button.style-default-active svg
-	{
-		fill: var(--main-color) !important;
-	}*/
+  	{
+  		fill: var(--dimmer-text) !important;
+  	}
+  	.style-scope.ytd-toggle-button-renderer yt-icon-button.style-default-active svg
+  	{
+  		fill: var(--main-color) !important;
+  	}*/
   ytd-toggle-button-renderer.ytd-comment-action-buttons-renderer #button.ytd-toggle-button-renderer {
     color: var(--yt-button-color);
   }
@@ -3630,14 +3633,14 @@
 
   /* Fix for placeholders/skeletons */
   /*ytd-masthead.shell
-	{
-		background-color: var(--main-background);
-	}
-	ytd-masthead.shell [class*='skeleton'], [id*='skeleton'] [class*='skeleton'], [id*='skeleton'], .shelf-videos, .skeleton-bg-color
-	{
-		background-color: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;
-	}*/
+  	{
+  		background-color: var(--main-background);
+  	}
+  	ytd-masthead.shell [class*='skeleton'], [id*='skeleton'] [class*='skeleton'], [id*='skeleton'], .shelf-videos, .skeleton-bg-color
+  	{
+  		background-color: var(--hover-background) !important;
+  		border-color: var(--hover-background) !important;
+  	}*/
   /*homepage skeleton*/
   #home-container-skeleton,
   html[dark] #home-container-skeleton {
@@ -3659,7 +3662,7 @@
   .masthead-skeleton-icon,
   html[dark] .masthead-skeleton-icon,
   /*ytd-masthead.shell [class*='skeleton'], html[dark] ytd-masthead.shell,
-	.shelf-videos, html[dark] .shelf-videos,*/
+  	.shelf-videos, html[dark] .shelf-videos,*/
   .skeleton-bg-color,
   html[dark] .skeleton-bg-color {
     background-color: var(--hover-background) !important;
@@ -3721,38 +3724,38 @@
   }
 
   /*
-	.ghp-header-searchIcon.ghpv-loaded, .ghp-iconTextComponent-icon, .ghp-autocomplete-icon
-	{
-		filter: invert(100%) grayscale(100%) brightness(150%);
-	}
-	.ghp-autocompleteGlass
-	{
-		background: rgba(0,0,0,3) !important;
-	}
-	.ghp-card-title
-	{
-		color: var(--main-text) !important;
-	}
-	.ghp-card, .ghp-content, .ghp-iconTextComponent, .ghp-contentFrame, .hcfe
-	{
-		background-color: var(--second-background) !important;
-		border-color: var(--hover-background) !important;
-	}
-	.ghp-iconTextComponent:hover .ghp-iconTextComponent-label,
-	.ghp-iconTextComponent:hover .ghp-separator
-	{
-		color: var(--main-color) !important;
-		border-color: var(--hover-background) !important;
-	}
-	.ghp-separator
-	{
-		border-color: var(--hover-background) !important;
-	}
-	.ghp-iconTextComponent-label, .hcfe
-	{
-		color: var(--dimmer-text) !important;
-	}
-	*/
+  	.ghp-header-searchIcon.ghpv-loaded, .ghp-iconTextComponent-icon, .ghp-autocomplete-icon
+  	{
+  		filter: invert(100%) grayscale(100%) brightness(150%);
+  	}
+  	.ghp-autocompleteGlass
+  	{
+  		background: rgba(0,0,0,3) !important;
+  	}
+  	.ghp-card-title
+  	{
+  		color: var(--main-text) !important;
+  	}
+  	.ghp-card, .ghp-content, .ghp-iconTextComponent, .ghp-contentFrame, .hcfe
+  	{
+  		background-color: var(--second-background) !important;
+  		border-color: var(--hover-background) !important;
+  	}
+  	.ghp-iconTextComponent:hover .ghp-iconTextComponent-label,
+  	.ghp-iconTextComponent:hover .ghp-separator
+  	{
+  		color: var(--main-color) !important;
+  		border-color: var(--hover-background) !important;
+  	}
+  	.ghp-separator
+  	{
+  		border-color: var(--hover-background) !important;
+  	}
+  	.ghp-iconTextComponent-label, .hcfe
+  	{
+  		color: var(--dimmer-text) !important;
+  	}
+  	*/
   /*Trending page*/
   ytd-destination-button-renderer {
     background-color: var(--hover-background) !important;
