@@ -2,7 +2,7 @@
 @name YouTube Catppuccin-Mocha
 @namespace github.com/catppuccin/YouTube
 @homepageURL https://github.com/catppuccin/YouTube
-@version 2.0.0
+@version 2.0.1
 @updateURL https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinMocha.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -226,9 +226,7 @@
         text-shadow: none;
     }
 
-    #yt-masthead #logo-container .logo,
-    /*error page*/
-    {
+    #yt-masthead #logo-container .logo {
         filter: invert(1) grayscale(1);
     }
 
@@ -345,8 +343,8 @@
     /*Nav bar*/
     ytd-masthead,
     #yt-masthead-container,
-    #masthead-positioner-height-offset/*account page*/
-    {
+    #masthead-positioner-height-offset {
+        /*account page*/
         background-color: var(--second-background) !important;
         border-bottom-color: var(--hover-background) !important;
     }
@@ -360,8 +358,8 @@
     }
 
     #logo-icon-container.ytd-topbar-logo-renderer #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer,
-    #youtube-red-paths/*premium*/
-    {
+    #youtube-red-paths {
+        /*premium*/
         fill: var(--main-text) !important;
     }
 
@@ -616,9 +614,8 @@
         background-color: var(--main-color) !important;
     }
 
-    tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .choice-info .choice-text,
-    tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .choice-info .vote-percentage {
-        color: var(--highlighted-text) !important;
+    tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .choice-info .choice-text {
+        color: var(--main-text) !important;
     }
 
     /*other bars*/
@@ -740,8 +737,7 @@
     /*playlist*/
     #content-attachment.ytd-post-renderer ytd-video-renderer.ytd-post-renderer,
     /*normal video, but in cards on home page*/
-    #content-attachment.ytd-post-renderer ytd-playlist-renderer.ytd-post-renderer/*playlist, but in cards on home page*/
-    {
+    #content-attachment.ytd-post-renderer ytd-playlist-renderer.ytd-post-renderer {
         background: var(--hover-background) !important;
     }
 
@@ -901,18 +897,18 @@
         background-color: transparent !important;
     }
 
-    input.yt-clip-creation-scrubber-renderer/*time*/
-    {
+    /*time*/
+    input.yt-clip-creation-scrubber-renderer {
         border-color: var(--dimmer-text) !important;
     }
 
-    #handles.yt-clip-creation-scrubber-view/*preview*/
-    {
+    /*preview*/
+    #handles.yt-clip-creation-scrubber-view {
         border-color: var(--main-color) !important;
     }
 
-    .handle.yt-clip-creation-scrubber-view/*preview*/
-    {
+    /*preview*/
+    .handle.yt-clip-creation-scrubber-view {
         background-color: var(--main-color) !important;
     }
 
@@ -1075,12 +1071,12 @@
     }
 
     /*Next and prev buttons*/
+    /*share link*/
     .arrow.yt-horizontal-list-renderer,
     #scroll-button-forward,
     .arrow.ytd-horizontal-card-list-renderer,
     .ytd-horizontal-card-list-renderer[arrow],
-    .scroll-button.yt-third-party-share-target-section-renderer/*share link*/
-    {
+    .scroll-button.yt-third-party-share-target-section-renderer {
         background-color: var(--hover-background) !important;
     }
 
@@ -1119,8 +1115,7 @@
     ytd-single-option-survey-renderer,
     ytd-survey-follow-up-renderer[dialog][dialog][dialog],
     ytd-survey-follow-up-renderer,
-    ytd-checkbox-survey-renderer[dialog][dialog][dialog]/*TODO: forgot to test if the [dialog] is even needed*/
-    {
+    ytd-checkbox-survey-renderer[dialog][dialog][dialog] {
         background-color: var(--hover-background) !important;
         box-shadow: var(--shadow) !important;
     }
@@ -1757,6 +1752,7 @@
 
     .ytp-large-play-button.ytp-button.ytp-red2:hover,
     .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button.ytp-button.ytp-red2 {
+        /*background-image: url(https://github.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/
         background-image: url(https://s.ytimg.com/yts/img/large_play_button_ringo-vfljWXIdx.png) !important;
         filter: invert(100%) brightness(300%);
     }
@@ -4284,6 +4280,24 @@
         border-color: var(--hover-background) !important;
     }
 
+    /*clip share*/
+    .ytd-clip-section-renderer {
+        background-color: var(--main-background) !important;
+    }
+
+    .yt-spec-button-shape-next[aria-label="Share clip"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
+        color: var(--main-background) !important;
+    }
+
+    .yt-spec-button-shape-next[aria-label="Share clip"] {
+        background-color: var(--main-color) !important;
+    }
+
+    /*Watch on YouTube*/
+    #offer-module .ytd-watch-next-secondary-results-renderer,
+    #offer-module .ytd-tvfilm-offer-module-renderer {
+        background-color: var(--second-background) !important;
+    }
 
     /*SponsorBlock*/
     /*logo change*/
