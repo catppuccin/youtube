@@ -46,176 +46,6 @@
 ==/UserStyle== */
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
-<<<<<<< HEAD
-  /*Main color variables*/
-  :root {
-    if stylus-ctp-style=="Catppuccin-Macchiato-Green" {
-      --main-color: #A6DA95;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Lavender" {
-      --main-color: #B7BDF8;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Flamingo" {
-      --main-color: #F0C6C6;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Mauve" {
-      --main-color: #C6A0F6;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Pink" {
-      --main-color: #F5BDE6;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Red" {
-      --main-color: #ED8796;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Peach" {
-      --main-color: #F5A97F;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Yellow" {
-      --main-color: #EED49F;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Teal" {
-      --main-color: #8BD5CA;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Blue" {
-      --main-color: #8AADF4;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Sky" {
-      --main-color: #91D7E3;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Maroon" {
-      --main-color: #EE99A0;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Sapphire" {
-      --main-color: #7DC4E4;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Catppuccin-Macchiato-Rosewater" {
-      --main-color: #F4DBD6;
-      --main-background: #24273A;
-      --second-background: #1E2030;
-      --player-background: #181926;
-      --hover-background: #363A4F;
-      --main-text: #CAD3F5;
-      --dimmer-text: #939AB7;
-      --shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    }
-
-    else if stylus-ctp-style=="Custom" {
-      --main-color: mainColor;
-      --main-background: mainBackground;
-      --second-background: secondBackground;
-      --player-background: playerBackground;
-      --hover-background: hoverBackground;
-      --main-text: mainText;
-      --dimmer-text: dimmerText;
-      --shadow: 0 1px 0.5px colorShadow;
-    }
-  }
-
-=======
     /*Main color variables*/
     :root {
         if stylus-ctp-style=="Catppuccin-Macchiato-Green" {
@@ -384,7 +214,6 @@
         }
     }
 
->>>>>>> 4138b60a81302a3c00abe1421213e24b8442f12e
     /*Error page*/
     #error-page,
     #error-page-content {
@@ -397,13 +226,7 @@
         text-shadow: none;
     }
 
-<<<<<<< HEAD
     #yt-masthead #logo-container .logo {
-=======
-    #yt-masthead #logo-container .logo,
-    /*error page*/
-    {
->>>>>>> 4138b60a81302a3c00abe1421213e24b8442f12e
         filter: invert(1) grayscale(1);
     }
 
@@ -791,14 +614,8 @@
         background-color: var(--main-color) !important;
     }
 
-<<<<<<< HEAD
     tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .choice-info .choice-text {
         color: var(--main-text) !important;
-=======
-    tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .choice-info .choice-text,
-    tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .choice-info .vote-percentage {
-        color: var(--highlighted-text) !important;
->>>>>>> 4138b60a81302a3c00abe1421213e24b8442f12e
     }
 
     /*other bars*/
@@ -1080,7 +897,6 @@
         background-color: transparent !important;
     }
 
-<<<<<<< HEAD
     /*time*/
     input.yt-clip-creation-scrubber-renderer {
         border-color: var(--dimmer-text) !important;
@@ -1093,20 +909,6 @@
 
     /*preview*/
     .handle.yt-clip-creation-scrubber-view {
-=======
-    input.yt-clip-creation-scrubber-renderer/*time*/
-    {
-        border-color: var(--dimmer-text) !important;
-    }
-
-    #handles.yt-clip-creation-scrubber-view/*preview*/
-    {
-        border-color: var(--main-color) !important;
-    }
-
-    .handle.yt-clip-creation-scrubber-view/*preview*/
-    {
->>>>>>> 4138b60a81302a3c00abe1421213e24b8442f12e
         background-color: var(--main-color) !important;
     }
 
@@ -1950,6 +1752,7 @@
 
     .ytp-large-play-button.ytp-button.ytp-red2:hover,
     .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button.ytp-button.ytp-red2 {
+        /*background-image: url(https://github.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/
         background-image: url(https://s.ytimg.com/yts/img/large_play_button_ringo-vfljWXIdx.png) !important;
         filter: invert(100%) brightness(300%);
     }
@@ -4476,27 +4279,26 @@
     ytd-hotkey-dialog-section-option-renderer {
         border-color: var(--hover-background) !important;
     }
-	
-	/*clip share*/
-	.ytd-clip-section-renderer {
-		background-color: var(--main-background) !important;
-	}	
-	
-	.yt-spec-button-shape-next[aria-label="Share clip"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
-		color: var(--main-background) !important;
-	}
-	
-	.yt-spec-button-shape-next[aria-label="Share clip"] {
-		background-color:  var(--main-color) !important;
-	}
-	
-	/*Watch on YouTube*/
-	#offer-module .ytd-watch-next-secondary-results-renderer,
-	#offer-module .ytd-tvfilm-offer-module-renderer
-	{
-		background-color: var(--second-background) !important;
-	}
-	
+
+    /*clip share*/
+    .ytd-clip-section-renderer {
+        background-color: var(--main-background) !important;
+    }
+
+    .yt-spec-button-shape-next[aria-label="Share clip"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
+        color: var(--main-background) !important;
+    }
+
+    .yt-spec-button-shape-next[aria-label="Share clip"] {
+        background-color: var(--main-color) !important;
+    }
+
+    /*Watch on YouTube*/
+    #offer-module .ytd-watch-next-secondary-results-renderer,
+    #offer-module .ytd-tvfilm-offer-module-renderer {
+        background-color: var(--second-background) !important;
+    }
+
     /*SponsorBlock*/
     /*logo change*/
     #sponsorBlockPopupLogo,
