@@ -10,7 +10,6 @@
     <a href="https://github.com/catppuccin/YouTube/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/YouTube?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-
 <p align="center">
   <img src="/assets/preview.webp"/>
 </p>
@@ -34,7 +33,6 @@
   <img src="/assets/mocha.png"/>
 </details>
 
-
 ## Usage
 
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
@@ -54,9 +52,9 @@
 
 ## 💝 Thanks to
 
-- [Artilate](https://github.com/artilate/youtube) - this theme is made by modification of great YouTube rose pine theme
+- [Isabel](https://github.com/isabelroses) - v2.0.0 youtube theme
 - [Elkrien](https://github.com/elkrien) - v1.0.0 youtube theme
-- [Isabel Roses](https://github.com/isabelroses) - code rewrite
+- [Artilate](https://github.com/artilate/youtube) - this theme is made by modification of great YouTube rose pine theme
 
 &nbsp;
 
