@@ -58,6 +58,14 @@
 
 ![Help image](/assets/set-to-lightmode.png)
 </details>
+<details>
+<summary>
+6. Remember to update occationally
+</summary>
+
+![Help image](/assets/update-image.png)
+You may have to press the button twice to do the update
+</details>
 
 
 ## 💝 Thanks to
