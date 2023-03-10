@@ -33,7 +33,7 @@
   <img src="/assets/mocha.png"/>
 </details>
 
-## Usage
+## Install
 
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 2. Then install with Stylus (click on the link):
@@ -41,14 +41,24 @@
   - [🪴 Catppuccin Frappe](/src/YouTubeCatppuccinFrappe.user.css?raw=1)
   - [🌺 Catppuccin Macchiato](/src/YouTubeCatppuccinMacchiato.user.css?raw=1)
   - [🌿 Catppuccin Mocha](/src/YouTubeCatppuccinMocha.user.css?raw=1)
+- <details><summary> alternative installs: </summary>
+
+  - [🌻 Catppuccin Latte](https://userstyles.world/style/8891/youtube-catppuccin-latte)
+  - [🪴 Catppuccin Frappe](https://userstyles.world/style/8892/youtube-catppuccin-frappe)
+  - [🌺 Catppuccin Macchiato](https://userstyles.world/style/8890/youtube-catppuccin-macchiato)
+  - [🌿 Catppuccin Mocha](https://userstyles.world/style/8889/youtube-catppuccin-mocha)
+</details>
+
 3. Choose Your accent color by Setting Theme in Stylus Options
+4. Choose Your subscribe and join buttons by Setting Theme in Stylus Options
 <details>
 <summary>
-4. Make sure your base youtube theme is set to light mode
+5. Make sure your base youtube theme is set to light mode
 </summary>
 
 ![Help image](/assets/set-to-lightmode.png)
 </details>
+
 
 ## 💝 Thanks to
 
