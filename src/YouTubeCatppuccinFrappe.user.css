@@ -2,7 +2,7 @@
 @name YouTube Catppuccin-Frappe
 @namespace github.com/catppuccin/YouTube
 @homepageURL https://github.com/catppuccin/YouTube
-@version 2.0.2
+@version 2.0.3
 @updateURL https://github.com/catppuccin/YouTube/raw/main/src/YouTubeCatppuccinFrappe.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -551,13 +551,17 @@
     }
 
     yt-chip-cloud-chip-renderer:not([selected]) {
-        background-color: var(--main-background) !important;
-        border-color: var(--hover-background) !important;
+        background-color: var(--second-background) !important;
     }
-
+    
+    yt-chip-cloud-chip-renderer[modern-chips][chip-style] {
+        border: 1px solid var(--yt-spec-10-percent-layer);
+    }
+    
     yt-chip-cloud-chip-renderer[selected],
     yt-chip-cloud-chip-renderer:hover {
         background-color: var(--hover-background) !important;
+        border-color: var(--main-color) !important;
     }
 
     yt-chip-cloud-renderer {
@@ -3088,11 +3092,12 @@
     /*bell icon notification count*/
     .yt-spec-icon-badge-shape--type-notification .yt-spec-icon-badge-shape__badge {
         background-color: var(--main-color) !important;
+        color: var(--main-background) !important;
         border: none !important;
     }
 
     button.yt-icon-button:hover .yt-spec-icon-badge-shape--type-notification .yt-spec-icon-badge-shape__badge {
-        color: var(--main-text) !important;
+        color: var(--main-background) !important;
     }
 
     /*load spinner - also for comments*/
@@ -3628,6 +3633,11 @@
     /*Paid membership*/
     yt-subscription-product-header-renderer.ytd-item-section-renderer {
         color: var(--main-text) !important;
+    }
+    
+    #contents .ytd-item-section-renderer,
+    #contents #main-content {
+        background-color: var(--main-backgorund) !important;
     }
 
     /*Reporting*/
@@ -4285,11 +4295,16 @@
         background-color: var(--main-background) !important;
     }
 
-    .yt-spec-button-shape-next[aria-label="Share clip"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
+    .yt-spec-button-shape-next[aria-label="Share clip"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string,
+    .yt-spec-button-shape-next[aria-label="Watch full video"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
         color: var(--main-background) !important;
     }
 
     .yt-spec-button-shape-next[aria-label="Share clip"] {
+        background-color: var(--main-color) !important;
+    }
+    
+    .yt-spec-button-shape-next[aria-label="Share clip"]:hover {
         background-color: var(--main-color) !important;
     }
 
