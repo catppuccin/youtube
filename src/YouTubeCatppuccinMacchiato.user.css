@@ -3634,6 +3634,11 @@
     yt-subscription-product-header-renderer.ytd-item-section-renderer {
         color: var(--main-text) !important;
     }
+    
+    #contents .ytd-item-section-renderer,
+    #contents #main-content {
+        background-color: var(--main-backgorund) !important;
+    }
 
     /*Reporting*/
     .introduction-header {
@@ -4290,11 +4295,16 @@
         background-color: var(--main-background) !important;
     }
 
-    .yt-spec-button-shape-next[aria-label="Share clip"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
+    .yt-spec-button-shape-next[aria-label="Share clip"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string,
+    .yt-spec-button-shape-next[aria-label="Watch full video"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
         color: var(--main-background) !important;
     }
 
     .yt-spec-button-shape-next[aria-label="Share clip"] {
+        background-color: var(--main-color) !important;
+    }
+    
+    .yt-spec-button-shape-next[aria-label="Share clip"]:hover {
         background-color: var(--main-color) !important;
     }
 
