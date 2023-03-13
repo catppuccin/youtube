@@ -2,7 +2,7 @@
 @name YouTube Catppuccin-Macchiato
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 2.0.3
+@version 2.0.4
 @updateURL https://github.com/catppuccin/youtube/raw/main/src/YouTubeCatppuccinMacchiato.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -4288,6 +4288,10 @@
 
     ytd-hotkey-dialog-section-option-renderer {
         border-color: var(--hover-background) !important;
+    }
+    
+    .yt-spec-button-shape-next[aria-label="Donate"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
+        color: var(--main-background) !important;
     }
 
     /*clip share*/
