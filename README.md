@@ -11,36 +11,33 @@
 </p>
 
 <p align="center">
-  <img src="/assets/preview.webp"/>
+  <img src="assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-  <img src="/assets/latte.webp"/>
+  <img src="assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-  <img src="/assets/frappe.webp"/>
+  <img src="assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-  <img src="/assets/macchiato.webp"/>
+  <img src="assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-  <img src="/assets/mocha.webp"/>
+  <img src="assets/mocha.webp"/>
 </details>
 
 ## Install
 
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 2. Then install with Stylus (click on the link):
-  - [🌻 Catppuccin Latte](/src/YouTubeCatppuccinLatte.user.css?raw=1)
-  - [🪴 Catppuccin Frappe](/src/YouTubeCatppuccinFrappe.user.css?raw=1)
-  - [🌺 Catppuccin Macchiato](/src/YouTubeCatppuccinMacchiato.user.css?raw=1)
-  - [🌿 Catppuccin Mocha](/src/YouTubeCatppuccinMocha.user.css?raw=1)
+  - [🌻 Catppuccin for YouTube](src/catppuccin.user.css?raw=1)
 - <details><summary> alternative installs: </summary>
 
   - [🌻 Catppuccin Latte](https://userstyles.world/style/8891/youtube-catppuccin-latte)
@@ -71,6 +68,7 @@ You may have to press the button twice to do the update
 ## 💝 Thanks to
 
 - [Isabel](https://github.com/isabelroses) - v2.0.0 youtube theme
+- [rubyowo](https://github.com/rubyowo) - made it a singular file
 - [Elkrien](https://github.com/elkrien) - v1.0.0 youtube theme
 - [Artilate](https://github.com/artilate/youtube) - this theme is made by modification of great YouTube rose pine theme
 
