@@ -36,41 +36,38 @@
 ## Install
 
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
-2. Then install with Stylus (click on the link):
-  - [🌻 Catppuccin for YouTube](src/catppuccin.user.css?raw=1)
-- <details><summary> alternative installs: </summary>
 
-  - [🌻 Catppuccin Latte](https://userstyles.world/style/8891/youtube-catppuccin-latte)
-  - [🪴 Catppuccin Frappe](https://userstyles.world/style/8892/youtube-catppuccin-frappe)
-  - [🌺 Catppuccin Macchiato](https://userstyles.world/style/8890/youtube-catppuccin-macchiato)
-  - [🌿 Catppuccin Mocha](https://userstyles.world/style/8889/youtube-catppuccin-mocha)
-</details>
-
-3. Choose Your accent color by Setting Theme in Stylus Options
-4. Choose Your subscribe and join buttons by Setting Theme in Stylus Options
 <details>
 <summary>
-5. Make sure your base youtube theme is set to light mode
+2. Make sure your base youtube theme is set to light mode
 </summary>
 
 ![Help image](/assets/set-to-lightmode.webp)
 </details>
-<details>
-<summary>
-6. Remember to update occationally
-</summary>
 
-![Help image](/assets/update-image.webp)
-You may have to press the button twice to do the update
+3. Then install with Stylus (click on the link):
+  - [Catppuccin for YouTube](src/catppuccin.user.css?raw=1)
+- <details><summary> alternative installs: </summary>
+
+  - [userstyles.world](https://userstyles.world/style/8932/youtube-catppuccin)
 </details>
+
+4. Choose Your Theme, accent color, subscribe and join buttons by Setting Theme in Stylus Options
+
+
+## 🙋 FAQ
+
+Q: How to update
+A: Click the button hlighted in red
+![Help image](/assets/update-image.webp)
 
 
 ## 💝 Thanks to
 
 - [Isabel](https://github.com/isabelroses) - v2.0.0 youtube theme
-- [rubyowo](https://github.com/rubyowo) - made it a singular file
+- [rubyowo](https://github.com/rubyowo) - The great unification
 - [Elkrien](https://github.com/elkrien) - v1.0.0 youtube theme
-- [Artilate](https://github.com/artilate/youtube) - this theme is made by modification of great YouTube rose pine theme
+- [Artilate](https://github.com/artilate/youtube) - This theme is made by modification of great YouTube rose pine theme
 
 &nbsp;
 
