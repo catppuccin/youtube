@@ -57,11 +57,11 @@
 
 ## 🙋 FAQ
 
-Q: How to update
-A: Click the button hlighted in red
+- Q: **_"How to update?"_**\
+A: Click the button highlighted in red
 ![Help image](/assets/update-image.webp)
 
-Q: What does it mean black bars?
+- Q: **_"What does it mean black bars?"_**\
 A: It is there incase you have an OLED display, if you have one you might want to enable this.
 
 ## 💝 Thanks to
