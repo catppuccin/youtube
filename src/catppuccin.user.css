@@ -23,8 +23,8 @@
 
     /* init */
     @shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
-    @scrollbar_width: 8px;
-    @scrollbar_track: rgba(0, 0, 0, 0);
+    @scrollbar_width: 6px;
+    @scrollbar_track: transparent;
     #catppuccin(@flavour);
     #accent(@accentColour);
     #youtube();
