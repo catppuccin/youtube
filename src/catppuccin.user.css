@@ -16,7 +16,7 @@
 
 @var checkbox joinColor "Use dark join button" 0
 @var checkbox subscribeColor "Use dark subscribe button" 0
-@var checkbox oledOn "Enable for black bars" 0
+@var checkbox oledOn "Enable black bars" 0
 
 ==/UserStyle== */
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
