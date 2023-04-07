@@ -1675,7 +1675,7 @@
 
     /*Menuitem icon*/
     .ytp-menuitem-icon svg path {
-        color: var(--main-text);
+        fill: var(--main-text);
     }
 
     /*Keyboard focus*/
