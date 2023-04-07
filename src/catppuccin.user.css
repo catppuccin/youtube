@@ -773,7 +773,7 @@
     #footer.yt-clip-creation-renderer {
         background-color: var(--second-background) !important;
     }
-    
+
     .yt-spec-button-shape-next--disabled.yt-spec-button-shape-next--filled {
         background-color: var(--main-color) !important;
     }
@@ -1671,6 +1671,11 @@
     .ytp-panel-header {
         color: var(--main-text) !important;
         text-shadow: none !important;
+    }
+
+    /*Menuitem icon*/
+    .ytp-menuitem-icon svg path {
+        color: var(--main-text);
     }
 
     /*Keyboard focus*/
