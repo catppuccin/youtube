@@ -72,9 +72,6 @@ A: It is there incase you have an OLED display, if you have one you might want t
 - [rubyowo](https://github.com/rubyowo) - The great unification
 - [Elkrien](https://github.com/elkrien) - v1.0.0 youtube theme
 
-### 🌟 Special thanks to
-- [Artilate](https://github.com/artilate/youtube) - This theme is made by modification of great YouTube rose pine theme
-
 &nbsp;
 
 <p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
