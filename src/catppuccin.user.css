@@ -201,6 +201,10 @@
         @mantle: @catppuccin[@@lookup][@mantle];
         @crust: @catppuccin[@@lookup][@crust];
         @accent-colour: @catppuccin[@@lookup][@@accent];
+        
+        :root {
+            --yt-spec-base-background: @base;
+        }
 
         /* Error page */
         #error-page {
@@ -1697,6 +1701,9 @@
         /* logo */
         #logo-icon-container.ytd-topbar-logo-renderer svg g path[fill*="#FF0000"] {
             fill: @accent-colour !important;
+        }
+        yt-icon.ytd-logo {
+            color: @text !important; 
         }
 
         ytd-topbar-logo-renderer.style-scope a svg > g,
