@@ -3,7 +3,7 @@
 @name YouTube Catppuccin Less
 @namespace github.com/isabelroses/youtube
 @homepageURL https://github.com/isabelroses/youtube
-@version 2.4.0
+@version 2.4.1
 @updateURL https://github.com/isabelroses/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -201,7 +201,7 @@
         @mantle: @catppuccin[@@lookup][@mantle];
         @crust: @catppuccin[@@lookup][@crust];
         @accent-colour: @catppuccin[@@lookup][@@accent];
-        
+
         :root {
             --yt-spec-base-background: @base;
         }
@@ -274,6 +274,10 @@
             --yt-spec-outline: @surface0 !important;
             --yt-spec-brand-button-background: @accent-colour !important;
             --yt-formatted-string-bold-color: @overlay2 !important;
+            --yt-spec-commerce-filled-hover: @accent-colour !important;
+            --yt-spec-badge-chip-background: @mantle !important;
+            --yt-spec-touch-response: @crust !important;
+            --yt-spec-touch-response-inverse: @accent-colour !important;
         }
 
         /* Scrollbar */
@@ -294,6 +298,7 @@
         }
 
         /* Background */
+        html,
         body,
         ytd-browse,
         ytd-watch,
@@ -1703,7 +1708,7 @@
             fill: @accent-colour !important;
         }
         yt-icon.ytd-logo {
-            color: @text !important; 
+            color: @text !important;
         }
 
         ytd-topbar-logo-renderer.style-scope a svg > g,
@@ -2571,19 +2576,102 @@
         }
 
         /* buttons */
+        .yt-spec-button-shape-next--overlay,
+        .yt-spec-button-shape-next--mono {
+            color: @overlay2 !important;
+            &[aria-pressed="true"] {
+                background-color: @surface0 !important;
+            }
+            &:hover {
+                background-color: @surface1 !important;
+            }
+        }
+        
+        .yt-spec-touch-feedback-shape--touch-response-inverse,
         .yt-spec-button-shape-next--call-to-action,
-        .yt-spec-button-shape-next--disabled {
+        .yt-spec-button-shape-next--mono {
+            .yt-spec-button-shape-next--button-text-content {
+                color: @base !important;
+            }
+            .yt-spec-touch-feedback-shape__fill,
             .yt-spec-button-shape-next--filled {
                 background-color: @accent-colour !important;
-                color: @base !important;
+                .yt-core-attributed-string {
+                    color: @base !important;
+                }
+                &:hover {
+                    background-color: @accent-colour !important;
+                    .yt-core-attributed-string {
+                        color: @base !important;
+                    }
+                }
+            }
+        }
+        
+        .yt-spec-button-shape-next--disabled {
+            .yt-spec-button-shape-next--button-text-content {
+                color: lighten(@base, 10%) !important;
+            }
+            .yt-spec-touch-feedback-shape__fill,
+            .yt-spec-button-shape-next--filled {
+                background-color: lighten(@accent-colour, 10%) !important;
+                .yt-core-attributed-string {
+                    color: lighten(@base, 10%) !important;
+                }
+                &:hover {
+                    background-color: lighten(@accent-colour, 10%) !important;
+                    .yt-core-attributed-string {
+                        color: lighten(@base, 10%) !important;
+                    }
+                }
             }
         }
 
+        .yt-spec-touch-feedback-shape--touch-response,
         .yt-spec-button-shape-next--call-to-action,
         .yt-spec-button-shape-next--mono {
-            .yt-spec-button-shape-next--tonal {
+            .yt-spec-button-shape-next--tonal,
+            .yt-spec-touch-feedback-shape__tonal {
                 background: @mantle !important;
-                color: @text !important;
+                .yt-core-attributed-string {
+                    color: @text !important;
+                }
+                &:hover {
+                    background-color: @mantle !important;
+                    .yt-core-attributed-string {
+                        color: @text !important;
+                    }
+                }
+            }
+        }
+        
+        .yt-spec-button-shape-next--disabled {
+            .yt-spec-button-shape-next--tonal,
+            .yt-spec-touch-feedback-shape__tonal {
+                background: lighten(@mantle, 10%) !important;
+                .yt-core-attributed-string {
+                    color: lighten(@text, 10%) !important;
+                }
+                &:hover {
+                    background-color: lighten(@mantle, 10%) !important;
+                    .yt-core-attributed-string {
+                        color: lighten(@text, 10%) !important;
+                    }
+                }
+            }
+        }
+
+        /* clip button */
+        .yt-spec-button-shape-next--filled[aria-label="Share clip"] {
+            background-color: @accent-colour;
+            .yt-core-attributed-string {
+                color: @base !important;
+            }
+            &:hover {
+                background-color: @accent-colour !important;
+                .yt-core-attributed-string {
+                    color: @base !important;
+                }
             }
         }
 
@@ -2636,6 +2724,13 @@
             }
         }
 
+        
+        .yt-spec-button-shape-next--call-to-action[aria-label*="replies"] .yt-spec-button-shape-next--button-text-content {
+            color: @accent-colour !important;
+        }
+        .yt-spec-button-shape-next--mono[aria-label*="Cancel"] .yt-spec-button-shape-next--button-text-content {
+            color: @text !important;
+        }
         .yt-spec-touch-feedback-shape--touch-response {
             &:hover {
                 .yt-spec-touch-feedback-shape__fill {
@@ -2643,7 +2738,7 @@
                 }
             }
             .yt-spec-touch-feedback-shape__fill {
-                background: @mantle !important;
+                background: @crust !important;
             }
         }
 
