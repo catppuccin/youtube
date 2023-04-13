@@ -3,7 +3,7 @@
 @name YouTube Catppuccin Less
 @namespace github.com/isabelroses/youtube
 @homepageURL https://github.com/isabelroses/youtube
-@version 2.4.1
+@version 2.4.2
 @updateURL https://github.com/isabelroses/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -278,6 +278,7 @@
             --yt-spec-badge-chip-background: @mantle !important;
             --yt-spec-touch-response: @crust !important;
             --yt-spec-touch-response-inverse: @accent-colour !important;
+            --yt-spec-brand-background-solid: @base !important;
         }
 
         /* Scrollbar */
@@ -2590,9 +2591,6 @@
         .yt-spec-touch-feedback-shape--touch-response-inverse,
         .yt-spec-button-shape-next--call-to-action,
         .yt-spec-button-shape-next--mono {
-            .yt-spec-button-shape-next--button-text-content {
-                color: @base !important;
-            }
             .yt-spec-touch-feedback-shape__fill,
             .yt-spec-button-shape-next--filled {
                 background-color: @accent-colour !important;
@@ -2609,9 +2607,6 @@
         }
         
         .yt-spec-button-shape-next--disabled {
-            .yt-spec-button-shape-next--button-text-content {
-                color: lighten(@base, 10%) !important;
-            }
             .yt-spec-touch-feedback-shape__fill,
             .yt-spec-button-shape-next--filled {
                 background-color: lighten(@accent-colour, 10%) !important;
