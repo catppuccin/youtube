@@ -2,7 +2,7 @@
 @name YouTube Catppuccin
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 2.1.2
+@version 2.1.3
 @updateURL https://github.com/catppuccin/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -1141,7 +1141,10 @@
         background-color: var(--main-background) !important;
     }
 
-    .yt-spec-button-shape-next[aria-label="Reply"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string,
+    .yt-spec-button-shape-next[aria-label="Reply"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
+      color: var(--main-text) !important;
+    }
+    
     .yt-spec-button-shape-next[aria-label="Comment"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string,
     .yt-spec-button-shape-next[aria-label="Buy and Send"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string,
     .yt-spec-button-shape-next[aria-label="Got it"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
