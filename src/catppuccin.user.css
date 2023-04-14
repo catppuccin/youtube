@@ -1145,7 +1145,7 @@
     .yt-spec-button-shape-next[aria-label="Comment"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string,
     .yt-spec-button-shape-next[aria-label="Buy and Send"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string,
     .yt-spec-button-shape-next[aria-label="Got it"] .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
-        color: var(--text) !important;
+        color: var(--main-text) !important;
     }
 
     #comment-chip-price {
