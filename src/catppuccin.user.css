@@ -2576,21 +2576,16 @@
             }
         }
 
-        /* buttons */
+        /* buttons */        
         .yt-spec-button-shape-next--overlay,
+        .yt-spec-button-shape-next--call-to-action,
         .yt-spec-button-shape-next--mono {
-            color: @overlay2 !important;
             &[aria-pressed="true"] {
                 background-color: @surface0 !important;
             }
             &:hover {
                 background-color: @surface1 !important;
             }
-        }
-        
-        .yt-spec-touch-feedback-shape--touch-response-inverse,
-        .yt-spec-button-shape-next--call-to-action,
-        .yt-spec-button-shape-next--mono {
             .yt-spec-touch-feedback-shape__fill,
             .yt-spec-button-shape-next--filled {
                 background-color: @accent-colour !important;
@@ -2622,9 +2617,15 @@
             }
         }
 
-        .yt-spec-touch-feedback-shape--touch-response,
+        .yt-spec-button-shape-next--overlay,
         .yt-spec-button-shape-next--call-to-action,
         .yt-spec-button-shape-next--mono {
+            &[aria-pressed="true"] {
+                background-color: @surface0 !important;
+            }
+            &:hover {
+                background-color: @surface1 !important;
+            }
             .yt-spec-button-shape-next--tonal,
             .yt-spec-touch-feedback-shape__tonal {
                 background: @mantle !important;
