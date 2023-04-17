@@ -4245,6 +4245,14 @@
     .sponsorBlockTooltip {
         background-color: var(--hover-background) !important;
     }
+
+    /*Community Cross-posting*/
+    ytd-shared-post-renderer[uses-compact-lockup] #repost-context.ytd-shared-post-renderer {
+        background-color: var(--second-background);
+    }
+    #divider-line-container.ytd-shared-post-renderer {
+        background-color: var(--yt-spec-10-percent-layer);
+    }
 }
 
 @-moz-document url-prefix('https://www.youtube.com/redirect') {
@@ -4304,13 +4312,5 @@
 
     #logo-container .content-region {
         color: var(--main-text) !important;
-    }
-  
-    /*Community Cross-posting*/
-    ytd-shared-post-renderer[uses-compact-lockup] #repost-context.ytd-shared-post-renderer {
-        background-color: var(--second-background);
-    }
-    #divider-line-container.ytd-shared-post-renderer {
-        background-color: var(--yt-spec-10-percent-layer);
     }
 }
