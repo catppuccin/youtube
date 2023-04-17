@@ -4305,4 +4305,12 @@
     #logo-container .content-region {
         color: var(--main-text) !important;
     }
+  
+    /*Community Cross-posting*/
+    ytd-shared-post-renderer[uses-compact-lockup] #repost-context.ytd-shared-post-renderer {
+        background-color: var(--second-background);
+    }
+    #divider-line-container.ytd-shared-post-renderer {
+        background-color: var(--yt-spec-10-percent-layer);
+    }
 }
