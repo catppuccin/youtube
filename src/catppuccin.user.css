@@ -3,7 +3,7 @@
 @name YouTube Catppuccin Less
 @namespace github.com/isabelroses/youtube
 @homepageURL https://github.com/isabelroses/youtube
-@version 2.4.2
+@version 2.4.5
 @updateURL https://github.com/isabelroses/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -11,7 +11,8 @@
 
 @preprocessor less
 
-@var select flavour "Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
+@var select lightTheme "Light Theme" ["latte:Latte*", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha"]
+@var select darkTheme "Dark Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
 @var select accentColour  "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve", "red:Red", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire*", "sky:Sky", "lavender:Lavender", "subtext0:Grey"]
 
 @var checkbox joinColor "Use dark join button" 0
@@ -23,7 +24,12 @@
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
     /* init */
-    #catppuccin(@flavour, @accentColour);
+    html[dark] {
+        #catppuccin(@darkTheme, @accentColour);
+    }
+    html {
+        #catppuccin(@lightTheme, @accentColour);
+    }
     #subscribe-color(@subscribeColor);
     #join-color(@joinColor);
     #oled(@oledOn);
@@ -300,7 +306,7 @@
         }
 
         /* Background */
-        html,
+        &,
         body,
         ytd-browse,
         ytd-watch,
@@ -3377,32 +3383,33 @@
 
         /* homepage skeleton */
         #home-container-skeleton,
-        html[dark] #home-container-skeleton {
+        &[darker-dark-theme][dark],
+        &[dark] #home-container-skeleton {
             background-color: @base !important;
         }
 
         /* sidebar skeleton */
         #guide-skeleton,
-        html[dark] #guide-skeleton {
+        &[dark] #guide-skeleton {
             background-color: @mantle !important;
         }
 
         /* homepage videos skeleton */
         #home-page-skeleton .skeleton-bg-color,
-        html[dark] #home-page-skeleton .skeleton-bg-color {
+        &[dark] #home-page-skeleton .skeleton-bg-color {
             background-color: @surface0 !important;
         }
 
         .masthead-skeleton-icon,
-        html[dark] .masthead-skeleton-icon,
+        &[dark] .masthead-skeleton-icon,
         .skeleton-bg-color,
-        html[dark] .skeleton-bg-color {
+        &[dark] .skeleton-bg-color {
             background-color: @surface0 !important;
             border-color: @surface0 !important;
         }
 
         .skeleton-light-border-bottom,
-        html[dark] .skeleton-light-border-bottom {
+        &[dark] .skeleton-light-border-bottom {
             border-bottom: 1px solid @surface0 !important;
         }
 
@@ -4298,7 +4305,7 @@
 @-moz-document url-prefix('https://www.youtube.com/redirect') {
 
     /* init */
-    #catppuccin(@flavour, @accentColour);
+    #catppuccin(@lightTheme, @accentColour);
     @shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
 
     @catppuccin: {
