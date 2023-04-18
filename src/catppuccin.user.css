@@ -4669,10 +4669,17 @@
         @accent-colour: @catppuccin[@@lookup][@@accent];
         
         &, html, html[dark], html[dark][dark], &[dark], &[light], [light], html[light], html[light][light] {
+            /* disable */
+            --yt-spec-black-pure-alpha-80: (null) !important;
+            --yt-spec-black-pure-alpha-60: (null) !important;
+            --yt-spec-black-1-alpha-98: (null) !important;
+            --yt-spec-black-1-alpha-95: (null) !important;
+            
             /* text */
             --yt-spec-text-primary: @text !important;
             --ytcp-text-primary: @text !important;
             --ytcp-text-primary-inverse: @base !important;
+            --ytcp-static-overlay-text-primary-inverse: @base !important;
             --ytcp-wordmark-text: @text !important;
             --ytcp-text-secondary: @subtext0 !important;
             --ytcp-text-disabled: @subtext1 !important;
@@ -4681,12 +4688,15 @@
             /* main bg */
             --ytcp-general-background-a: @base !important;
             --yt-spec-base-background: @base !important;
+            --yt-spec-black-3: @base !important;
             
             /* secondary bg */
+            --yt-spec-brand-background-solid: @mantle !important;
             --ytcp-brand-background-solid: @mantle !important;
             --yt-spec-raised-background: @mantle !important;
             --ytcp-general-background-b: @mantle !important;
             --ytcp-analytics-reach-background: @mantle !important;
+            --yt-spec-black-2: @mantle !important;
             
             
             /* additonal bg */
@@ -4708,13 +4718,18 @@
             
             /* buttons */
             --ytcp-call-to-action-raised-background: @accent-colour !important;
+            --yt-spec-brand-button-background: @accent-colour !important;
             --ytcp-call-to-action-raised-disabled: @surface2 !important;
             --ytcp-call-to-action-raised-disabled-background: @overlay2 !important;
             --ytcp-call-to-action-raised-background-inverse: @base !important;
             --ytcp-call-to-action-raised-disabled-inverse: @surface2 !important;
             --ytcp-call-to-action-raised-disabled-background-inverse: @overlay2 !important;
             
+            /* dropdown */
+            --yt-spec-brand-background-primary: @surface0 !important;
+            
             /* icons */
+            --yt-compact-link-icon-color: @overlay2 !important;
             --ytcp-icon-active: @accent-colour !important;
             --ytcp-icon-inactive: @overlay2 !important;
             --ytcp-icon-disabled: @overlay2 !important;
@@ -4760,6 +4775,7 @@
                 
             
             /* misc */
+            --yt-spec-badge-chip-background: @surface1 !important;
             --ytcp-focus-inverse: @accent-colour !important;
             --ytcp-focus: @accent-colour !important;
             --ytcp-selected-item: @accent-colour !important;
@@ -4767,6 +4783,13 @@
             --ytcp-chip-active-focus: @accent-colour !important;
             --ytcp-playhead: @overlay2 !important;
             --ytcp-playhead-inverse: @overlay2 !important;
+        }
+        ytcp-button.destructive.ytls-error-dialog {
+            color: @base !important;
+        }
+        
+        yt-formatted-string.ytls-error-dialog, tp-yt-iron-icon.ytls-error-dialog {
+            color: @text !important;
         }
     }
 }
