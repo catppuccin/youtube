@@ -279,6 +279,7 @@
             --yt-spec-touch-response: @crust !important;
             --yt-spec-touch-response-inverse: @accent-colour !important;
             --yt-spec-brand-background-solid: @base !important;
+            --yt-spec-text-disabled: @subtext0 !important;
         }
 
         /* Scrollbar */
@@ -726,6 +727,15 @@
             color: @overlay2 !important;
         }
 
+        .ytd-post-multi-image-renderer {
+            &[icon="yt-icons:chevron_left"],
+            &[icon="yt-icons:chevron_right"] {
+                svg g path {
+                    fill: @text !important;
+                }
+            }
+        }
+
         #author-text,
         .more-button,
         .less-button,
@@ -743,6 +753,29 @@
             ytd-video-renderer.ytd-backstage-post-renderer,
             ytd-playlist-renderer.ytd-backstage-post-renderer {
                 background: @surface0 !important;
+            }
+        }
+
+        #quiz-votes,
+        .explanation-box {
+            background: @base !important;
+        }
+
+        yt-icon.checked.ytd-backstage-quiz-renderer {
+            color: @green !important;
+        }
+
+        .choice-info.ytd-backstage-quiz-renderer,
+        tp-yt-paper-item.ytd-backstage-quiz-renderer:not([attempted]).ytd-backstage-quiz-renderer .choice-info.ytd-backstage-quiz-renderer {
+            border-color: @surface0 !important;
+        }
+
+        tp-yt-paper-item.ytd-backstage-quiz-renderer {
+            &[selected] .choice-info.ytd-backstage-quiz-renderer {
+                border-color: @accent-colour !important;
+            }
+            &[correct] .choice-info.ytd-backstage-quiz-renderer {
+                border-color: @green !important;
             }
         }
 
@@ -2576,7 +2609,7 @@
             }
         }
 
-        /* buttons */        
+        /* buttons */
         .yt-spec-button-shape-next--overlay,
         .yt-spec-button-shape-next--call-to-action,
         .yt-spec-button-shape-next--mono {
@@ -2600,19 +2633,15 @@
                 }
             }
         }
-        
+
         .yt-spec-button-shape-next--disabled {
-            .yt-spec-touch-feedback-shape__fill,
-            .yt-spec-button-shape-next--filled {
-                background-color: lighten(@accent-colour, 10%) !important;
+            background: darken(@mantle, 2%) !important;
+            .yt-spec-touch-feedback-shape--touch-response .yt-spec-touch-feedback-shape__fill {
+                background: darken(@mantle, 2%) !important;
+            }
+            .yt-spec-button-shape-next--button-text-content {
                 .yt-core-attributed-string {
-                    color: lighten(@base, 10%) !important;
-                }
-                &:hover {
-                    background-color: lighten(@accent-colour, 10%) !important;
-                    .yt-core-attributed-string {
-                        color: lighten(@base, 10%) !important;
-                    }
+                    color: @subtext0 !important;
                 }
             }
         }
@@ -2626,6 +2655,7 @@
             &:hover {
                 background-color: @surface1 !important;
             }
+
             .yt-spec-button-shape-next--tonal,
             .yt-spec-touch-feedback-shape__tonal {
                 background: @mantle !important;
@@ -2640,22 +2670,7 @@
                 }
             }
         }
-        
-        .yt-spec-button-shape-next--disabled {
-            .yt-spec-button-shape-next--tonal,
-            .yt-spec-touch-feedback-shape__tonal {
-                background: lighten(@mantle, 10%) !important;
-                .yt-core-attributed-string {
-                    color: lighten(@text, 10%) !important;
-                }
-                &:hover {
-                    background-color: lighten(@mantle, 10%) !important;
-                    .yt-core-attributed-string {
-                        color: lighten(@text, 10%) !important;
-                    }
-                }
-            }
-        }
+
 
         /* clip button */
         .yt-spec-button-shape-next--filled[aria-label="Share clip"] {
@@ -2720,7 +2735,7 @@
             }
         }
 
-        
+
         .yt-spec-button-shape-next--call-to-action[aria-label*="replies"] .yt-spec-button-shape-next--button-text-content {
             color: @accent-colour !important;
         }
