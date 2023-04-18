@@ -1128,8 +1128,6 @@
             }
         }
 
-
-
         /* show more / less */
         #expand.ytd-text-inline-expander:hover,
         #collapse.ytd-text-inline-expander:hover {
@@ -1147,7 +1145,7 @@
         }
 
         a.yt-simple-endpoint.yt-formatted-string:only-of-type {
-            color: @text !important;
+            color: @accent-colour !important;
             &:hover {
                 color: @accent-colour !important;
             }
@@ -2222,7 +2220,7 @@
         }
 
         .yt-core-attributed-string__link--call-to-action-color {
-            color: @overlay2 !important;
+            color: @accent-colour !important;
         }
 
         /* Show more videos */
