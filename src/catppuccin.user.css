@@ -3,7 +3,7 @@
 @name YouTube Catppuccin Less
 @namespace github.com/isabelroses/youtube
 @homepageURL https://github.com/isabelroses/youtube
-@version 2.4.5
+@version 2.4.6
 @updateURL https://github.com/isabelroses/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -20,14 +20,13 @@
 @var checkbox oledOn "Enable black bars" 0
 
 ==/UserStyle== */
-/* themes */
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
     /* init */
-    html[dark] {
+    :root[dark] {
         #catppuccin(@darkTheme, @accentColour);
     }
-    html {
+    :root {
         #catppuccin(@lightTheme, @accentColour);
     }
     #subscribe-color(@subscribeColor);
@@ -208,9 +207,7 @@
         @crust: @catppuccin[@@lookup][@crust];
         @accent-colour: @catppuccin[@@lookup][@@accent];
 
-        :root {
-            --yt-spec-base-background: @base;
-        }
+        --yt-spec-base-background: @base;
 
         /* Error page */
         #error-page {
@@ -293,8 +290,8 @@
             background: @accent-colour !important;
         }
 
-        *:not([hide-scrollbar]) ::-webkit-scrollbar {
-            width: 6px !important;
+        ::-webkit-scrollbar {
+            width: 8px !important;
         }
 
         ::-webkit-scrollbar-track {
@@ -307,6 +304,7 @@
 
         /* Background */
         &,
+        html,
         body,
         ytd-browse,
         ytd-watch,
@@ -541,7 +539,7 @@
         #tabs-inner-container {
             background: @surface0 !important;
             .ytd-c4-tabbed-header-renderer {
-                background: @surface0 !important;
+                border-bottom-color: @surface0 !important;
             }
         }
 
@@ -1075,7 +1073,7 @@
         #video-title:hover,
         ytd-channel-name-wiz__text:hover,
         ytd-grid-video-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer {
-            color: @accent-colour !important;
+            color: @sapphire !important;
         }
 
         /* author */
@@ -2226,7 +2224,7 @@
         }
 
         .yt-core-attributed-string__link--call-to-action-color {
-            color: @accent-colour !important;
+            color: @sapphire !important;
         }
 
         /* Show more videos */
@@ -2714,6 +2712,17 @@
         }
 
         /* top bar buttons */
+        .yt-spec-button-shape-next--icon-only-default {
+            .yt-spec-button-shape-next__icon yt-icon svg g path {
+                fill: @overlay2 !important;
+            }
+            &:hover {
+                .yt-spec-button-shape-next__icon yt-icon svg g path {
+                    fill: @accent-colour !important;
+                }
+            }
+        }
+
         #buttons.ytd-masthead > *.ytd-masthead:not(:last-child) {
             .yt-spec-button-shape-next__icon yt-icon svg g path {
                 fill: @overlay2 !important;
@@ -3149,6 +3158,10 @@
         /* Live background color */
         ytd-thumbnail-overlay-time-status-renderer[overlay-style="LIVE"] {
             background-color: @accent-colour !important;
+            * {
+                fill: @base !important;
+                color: @base !important;
+            }
         }
 
         .guide-entry-badge.ytd-guide-entry-renderer {
@@ -4305,7 +4318,12 @@
 @-moz-document url-prefix('https://www.youtube.com/redirect') {
 
     /* init */
-    #catppuccin(@lightTheme, @accentColour);
+    :root[dark] {
+        #catppuccin(@darkTheme, @accentColour);
+    }
+    :root {
+        #catppuccin(@lightTheme, @accentColour);
+    }
     @shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
 
     @catppuccin: {
@@ -4490,6 +4508,265 @@
 
         #logo-container .content-region {
             color: @text !important;
+        }
+    }
+}
+
+@-moz-document url-prefix('https://studio.youtube.com') {
+
+    /* init */
+    :root[dark] {
+        #catppuccin(@darkTheme, @accentColour);
+    }
+    :root {
+        #catppuccin(@lightTheme, @accentColour);
+    }
+    @shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+
+    @catppuccin: {
+        @latte: {
+            @rosewater: #dc8a78;
+            @flamingo: #dd7878;
+            @pink: #ea76cb;
+            @mauve: #8839ef;
+            @red: #d20f39;
+            @maroon: #e64553;
+            @peach: #fe640b;
+            @yellow: #df8e1d;
+            @green: #40a02b;
+            @teal: #179299;
+            @sky: #04a5e5;
+            @sapphire: #209fb5;
+            @blue: #1e66f5;
+            @lavender: #7287fd;
+            @text: #4c4f69;
+            @subtext1: #5c5f77;
+            @subtext0: #6c6f85;
+            @overlay2: #7c7f93;
+            @overlay1: #8c8fa1;
+            @overlay0: #9ca0b0;
+            @surface2: #acb0be;
+            @surface1: #bcc0cc;
+            @surface0: #ccd0da;
+            @base: #eff1f5;
+            @mantle: #e6e9ef;
+            @crust: #dce0e8;
+        }
+        @frappe: {
+            @rosewater: #f2d5cf;
+            @flamingo: #eebebe;
+            @pink: #f4b8e4;
+            @mauve: #ca9ee6;
+            @red: #e78284;
+            @maroon: #ea999c;
+            @peach: #ef9f76;
+            @yellow: #e5c890;
+            @green: #a6d189;
+            @teal: #81c8be;
+            @sky: #99d1db;
+            @sapphire: #85c1dc;
+            @blue: #8caaee;
+            @lavender: #babbf1;
+            @text: #c6d0f5;
+            @subtext1: #b5bfe2;
+            @subtext0: #a5adce;
+            @overlay2: #949cbb;
+            @overlay1: #838ba7;
+            @overlay0: #737994;
+            @surface2: #626880;
+            @surface1: #51576d;
+            @surface0: #414559;
+            @base: #303446;
+            @mantle: #292c3c;
+            @crust: #232634;
+        }
+        @macchiato: {
+            @rosewater: #f4dbd6;
+            @flamingo: #f0c6c6;
+            @pink: #f5bde6;
+            @mauve: #c6a0f6;
+            @red: #ed8796;
+            @maroon: #ee99a0;
+            @peach: #f5a97f;
+            @yellow: #eed49f;
+            @green: #a6da95;
+            @teal: #8bd5ca;
+            @sky: #91d7e3;
+            @sapphire: #7dc4e4;
+            @blue: #8aadf4;
+            @lavender: #b7bdf8;
+            @text: #cad3f5;
+            @subtext1: #b8c0e0;
+            @subtext0: #a5adcb;
+            @overlay2: #939ab7;
+            @overlay1: #8087a2;
+            @overlay0: #6e738d;
+            @surface2: #5b6078;
+            @surface1: #494d64;
+            @surface0: #363a4f;
+            @base: #24273a;
+            @mantle: #1e2030;
+            @crust: #181926;
+        }
+        @mocha: {
+            @rosewater: #f5e0dc;
+            @flamingo: #f2cdcd;
+            @pink: #f5c2e7;
+            @mauve: #cba6f7;
+            @red: #f38ba8;
+            @maroon: #eba0ac;
+            @peach: #fab387;
+            @yellow: #f9e2af;
+            @green: #a6e3a1;
+            @teal: #94e2d5;
+            @sky: #89dceb;
+            @sapphire: #74c7ec;
+            @blue: #89b4fa;
+            @lavender: #b4befe;
+            @text: #cdd6f4;
+            @subtext1: #bac2de;
+            @subtext0: #a6adc8;
+            @overlay2: #9399b2;
+            @overlay1: #7f849c;
+            @overlay0: #6c7086;
+            @surface2: #585b70;
+            @surface1: #45475a;
+            @surface0: #313244;
+            @base: #1e1e2e;
+            @mantle: #181825;
+            @crust: #11111b;
+        }
+    }
+
+    #catppuccin(@lookup, @accent) {
+
+        @rosewater: @catppuccin[@@lookup][@rosewater];
+        @flamingo: @catppuccin[@@lookup][@flamingo];
+        @pink: @catppuccin[@@lookup][@pink];
+        @mauve: @catppuccin[@@lookup][@mauve];
+        @red: @catppuccin[@@lookup][@red];
+        @maroon: @catppuccin[@@lookup][@maroon];
+        @peach: @catppuccin[@@lookup][@peach];
+        @yellow: @catppuccin[@@lookup][@yellow];
+        @green: @catppuccin[@@lookup][@green];
+        @teal: @catppuccin[@@lookup][@teal];
+        @sky: @catppuccin[@@lookup][@sky];
+        @sapphire: @catppuccin[@@lookup][@sapphire];
+        @blue: @catppuccin[@@lookup][@blue];
+        @lavender: @catppuccin[@@lookup][@lavender];
+        @text: @catppuccin[@@lookup][@text];
+        @subtext1: @catppuccin[@@lookup][@subtext1];
+        @subtext0: @catppuccin[@@lookup][@subtext0];
+        @overlay2: @catppuccin[@@lookup][@overlay2];
+        @overlay1: @catppuccin[@@lookup][@overlay1];
+        @overlay0: @catppuccin[@@lookup][@overlay0];
+        @surface2: @catppuccin[@@lookup][@surface2];
+        @surface1: @catppuccin[@@lookup][@surface1];
+        @surface0: @catppuccin[@@lookup][@surface0];
+        @base: @catppuccin[@@lookup][@base];
+        @mantle: @catppuccin[@@lookup][@mantle];
+        @crust: @catppuccin[@@lookup][@crust];
+        @accent-colour: @catppuccin[@@lookup][@@accent];
+        
+        &, html, html[dark], html[dark][dark], &[dark], &[light], [light], html[light], html[light][light] {
+            /* text */
+            --yt-spec-text-primary: @text !important;
+            --ytcp-text-primary: @text !important;
+            --ytcp-text-primary-inverse: @base !important;
+            --ytcp-wordmark-text: @text !important;
+            --ytcp-text-secondary: @subtext0 !important;
+            --ytcp-text-disabled: @subtext1 !important;
+            --ytcp-overlay-text-primary: @overlay2 !important;
+            
+            /* main bg */
+            --ytcp-general-background-a: @base !important;
+            --yt-spec-base-background: @base !important;
+            
+            /* secondary bg */
+            --ytcp-brand-background-solid: @mantle !important;
+            --yt-spec-raised-background: @mantle !important;
+            --ytcp-general-background-b: @mantle !important;
+            --ytcp-analytics-reach-background: @mantle !important;
+            
+            
+            /* additonal bg */
+            --ytcp-general-background-c: @crust !important;
+            
+            /* menu */
+            --ytcp-menu-background: @surface0 !important;
+            
+            /* card borders */
+            --ytcp-container-border-color: @surface0 !important;
+            --ytcp-container-hovered-border-color: @surface0 !important;
+            --ytcp-line-divider-solid: @surface0 !important;
+            --ytcp-container-border-color-inverse: @subtext0 !important;
+            --ytcp-line-divider-solid-inverse: @subtext0 !important;
+                        
+            /* links */
+            --ytcp-call-to-action: @sapphire !important;
+            --ytcp-call-to-action-inverse: @mantle !important;
+            
+            /* buttons */
+            --ytcp-call-to-action-raised-background: @accent-colour !important;
+            --ytcp-call-to-action-raised-disabled: @surface2 !important;
+            --ytcp-call-to-action-raised-disabled-background: @overlay2 !important;
+            --ytcp-call-to-action-raised-background-inverse: @base !important;
+            --ytcp-call-to-action-raised-disabled-inverse: @surface2 !important;
+            --ytcp-call-to-action-raised-disabled-background-inverse: @overlay2 !important;
+            
+            /* icons */
+            --ytcp-icon-active: @accent-colour !important;
+            --ytcp-icon-inactive: @overlay2 !important;
+            --ytcp-icon-disabled: @overlay2 !important;
+            --ytcp-icon-active-inverse: @overlay1 !important;
+            --ytcp-icon-disabled-inverse: @subtext1 !important;
+            
+            /* colours */
+            --ytcp-error-red: @red !important;
+            --ytcp-badge-red: @red !important;
+            --ytcp-error-red-inverse: @red !important;
+            --ytcp-themed-red-inverse: @red !important;
+            --ytcp-themed-red: @red !important;
+            --ytcp-themed-blue: @blue !important;
+            --ytcp-badge-blue-solid: @blue !important;
+            --ytcp-themed-blue-inverse: @blue !important;
+            --ytcp-themed-green: @green !important;
+            --ytmus-genre-primary-melon: @green !important;
+            --ytcp-themed-green-inverse: @green !important;
+            --ytcp-analytics-pine: @green !important;
+            --ytcp-analytics-pine-inverse: @green !important;
+            --ytcp-analytics-parrot: @green !important;
+            --ytcp-themed-yellow: @peach !important;
+            --ytmus-genre-primary-gold: @peach !important;
+            --ytcp-yellow-inverse: @peach !important;
+            --ytcp-badge-yellow: @peach !important;
+            --ytcp-analytics-yellow: @peach !important;
+            --ytcp-analytics-apricot: @peach !important;
+            --ytcp-suggested-action: @teal !important;
+            --ytcp-analytics-overview: @teal !important;
+            --ytcp-analytics-revenue: @teal !important;
+            --ytcp-analytics-default-secondary: @teal !important;
+            --ytcp-analytics-royal-blue: @lavender !important;
+            --ytcp-analytics-reach: @lavender !important;
+            --ytcp-analytics-audience: @lavender !important;
+            --ytcp-analytics-engagement: @pink !important;
+            --ytcp-analytics-revenue-secondary: @pink !important;
+            --ytcp-analytics-bubblegum: @flamingo !important;
+            --ytmus-genre-primary-ruby: @flamingo !important;
+            --ytmus-genre-primary-salmon: @mauve !important;
+            --ytmus-genre-primary-orange: @maroon !important;
+            --ytmus-genre-primary-sky: @sky !important;
+            --ytmus-genre-primary-sky-inverse: @sky !important;
+                
+            
+            /* misc */
+            --ytcp-focus-inverse: @accent-colour !important;
+            --ytcp-focus: @accent-colour !important;
+            --ytcp-selected-item: @accent-colour !important;
+            --ytcp-hover-item: @overlay2 !important;
+            --ytcp-chip-active-focus: @accent-colour !important;
+            --ytcp-playhead: @overlay2 !important;
+            --ytcp-playhead-inverse: @overlay2 !important;
         }
     }
 }
