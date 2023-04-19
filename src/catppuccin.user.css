@@ -3,7 +3,7 @@
 @name YouTube Catppuccin Less
 @namespace github.com/isabelroses/youtube
 @homepageURL https://github.com/isabelroses/youtube
-@version 2.4.8
+@version 2.4.9
 @updateURL https://github.com/isabelroses/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -25,13 +25,16 @@
     /* init */
     :root[dark] {
         #catppuccin(@darkTheme, @accentColour);
+        #subscribe-color(@subscribeColor);
+        #join-color(@joinColor);
+        #oled(@oledOn);
     }
     :root {
         #catppuccin(@lightTheme, @accentColour);
+        #subscribe-color(@subscribeColor);
+        #join-color(@joinColor);
+        #oled(@oledOn);
     }
-    #subscribe-color(@subscribeColor);
-    #join-color(@joinColor);
-    #oled(@oledOn);
     @shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
 
     /* buttons look nicer */
