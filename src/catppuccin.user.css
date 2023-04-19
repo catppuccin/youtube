@@ -383,12 +383,25 @@
             border-color: @surface0 !important;
         }
 
-
-        #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer,
         #guide-section-title.ytd-guide-section-renderer {
             color: @text !important;
         }
-
+        
+        #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer {
+            color: @text !important;
+            &:hover {
+                background-color: @surface1 !important;
+                #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer,
+                svg {
+                    color: @accent-colour !important;
+                    fill: @accent-colour !important;
+                }
+            }
+            &[active] {
+                background-color: @surface0 !important;
+            }
+        }
+        
         ytd-guide-entry-renderer {
             &:hover {
                 background-color: @surface1 !important;
@@ -2951,7 +2964,7 @@
 
         #sections.ytd-multi-page-menu-renderer > ytd-background-promo-renderer.ytd-multi-page-menu-renderer,
         ytd-multi-page-menu-renderer {
-            background: @mantle !important;
+            background: @surface0 !important;
             border-color: @mantle !important;
         }
 
@@ -3088,7 +3101,7 @@
 
         /* Account menu header */
         ytd-active-account-header-renderer {
-            background: @mantle !important;
+            background: @surface0 !important;
         }
 
         #account-name.ytd-active-account-header-renderer,
@@ -3118,7 +3131,7 @@
         paper-item.ytd-compact-link-renderer:hover,
         ytd-toggle-theme-compact-link-renderer:hover,
         tp-yt-paper-item.ytd-compact-link-renderer:hover {
-            background-color: @surface0 !important;
+            background-color: @surface1 !important;
         }
 
         .description.ytd-toggle-item-renderer,
@@ -3342,10 +3355,12 @@
             &[modern-chips][chip-style] {
                 border: 1px solid var(--yt-spec-10-percent-layer);
             }
-            &[selected],
+            &[selected] {
+                border-color: @accent-colour !important;
+                background-color: @mantle !important;
+            }
             &:hover {
                 background-color: @surface0 !important;
-                border-color: @accent-colour !important;
             }
         }
 
