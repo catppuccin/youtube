@@ -3,7 +3,7 @@
 @name YouTube Catppuccin Less
 @namespace github.com/isabelroses/youtube
 @homepageURL https://github.com/isabelroses/youtube
-@version 2.4.9
+@version 2.4.10
 @updateURL https://github.com/isabelroses/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -27,20 +27,19 @@
         #catppuccin(@darkTheme, @accentColour);
         #subscribe-color(@subscribeColor);
         #join-color(@joinColor);
-        #oled(@oledOn);
     }
     :root {
         #catppuccin(@lightTheme, @accentColour);
         #subscribe-color(@subscribeColor);
         #join-color(@joinColor);
-        #oled(@oledOn);
     }
+    #oled(@oledOn);
     @shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
 
     /* buttons look nicer */
     #join-color(@join-color) when (@join-color =1) {
-        .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled[aria-label="Join this channel"],
-        .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal[aria-label="Join this channel"] {
+        .yt-spec-button-shape-next--mono[aria-label="Join this channel"]
+        .yt-spec-button-shape-next--mono[aria-label="Join this channel"]:hover {
             background-color: @mantle !important;
             border-color: @mantle !important;
             color: @text !important;
@@ -1400,13 +1399,11 @@
         }
 
         /* join button */
-        .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled,
-        .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
-            &[aria-label="Join this channel"] {
-                background-color: @accent-colour !important;
-                border-color: @mantle !important;
-                color: @base !important;
-            }
+        .yt-spec-button-shape-next--mono[aria-label="Join this channel"],
+        .yt-spec-button-shape-next--mono[aria-label="Join this channel"]:hover {
+            background-color: @accent-colour !important;
+            border-color: @accent-colour !important;
+            color: @base !important;
         }
 
         /* download panel */
