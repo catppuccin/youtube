@@ -3,7 +3,7 @@
 @name YouTube Catppuccin Less
 @namespace github.com/isabelroses/youtube
 @homepageURL https://github.com/isabelroses/youtube
-@version 2.4.12
+@version 2.4.15
 @updateURL https://github.com/isabelroses/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -13,7 +13,7 @@
 
 @var select lightTheme "Light Theme" ["latte:Latte*", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha"]
 @var select darkTheme "Dark Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
-@var select accentColour  "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve", "red:Red", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire*", "sky:Sky", "lavender:Lavender", "subtext0:Grey"]
+@var select accentColour  "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve", "red:Red*", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire", "sky:Sky", "lavender:Lavender", "subtext0:Grey"]
 
 @var checkbox joinColor "Use dark join button" 0
 @var checkbox subscribeColor "Use dark subscribe button" 0
@@ -551,7 +551,7 @@
         /* header */
         #channel-header,
         #tabs-inner-container {
-            background: @surface0 !important;
+            background: @base !important;
             .ytd-c4-tabbed-header-renderer {
                 border-bottom-color: @surface0 !important;
             }
@@ -2269,6 +2269,10 @@
 
         .yt-core-attributed-string__link--call-to-action-color {
             color: @sapphire !important;
+        }
+        
+        .yt-core-attributed-string--highlight-text-decorator {
+            background: @surface0 !important;
         }
 
         /* Show more videos */
