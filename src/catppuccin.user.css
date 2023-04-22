@@ -1134,7 +1134,7 @@
         .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled > div > yt-icon > svg > g > path {
             fill: @accent-colour !important;
         }
-        
+
         /* description and other metadata */
         ytd-watch-metadata {
             &[modern-metapanel] #description.ytd-watch-metadata {
@@ -1522,7 +1522,7 @@
                 border-top-color: @mantle !important;
             }
         }
-        
+
         #text.yt-bubble-hint-renderer {
             background: @surface0 !important;
             color: @text !important;
@@ -2270,7 +2270,7 @@
         .yt-core-attributed-string__link--call-to-action-color {
             color: @sapphire !important;
         }
-        
+
         .yt-core-attributed-string--highlight-text-decorator {
             background: @surface0 !important;
         }
@@ -4570,14 +4570,13 @@
             background-color: @surface0 !important;
             box-shadow: @shadow !important;
         }
-        
+
         /*Community Cross-posting*/
         ytd-shared-post-renderer[uses-compact-lockup] #repost-context.ytd-shared-post-renderer {
             background-color: var(--second-background);
-          }
-          #divider-line-container.ytd-shared-post-renderer {
+        }
+        #divider-line-container.ytd-shared-post-renderer {
             background-color: var(--yt-spec-10-percent-layer);
-          }
         }
 
         #masthead-search-terms {
