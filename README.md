@@ -37,22 +37,14 @@
 
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 
-<details>
-<summary>
-2. Make sure your base youtube theme is set to light mode
-</summary>
-
-![Help image](/assets/set-to-lightmode.webp)
-</details>
-
-3. Then install with Stylus (click on the link):
+2. Then install with Stylus (click on the link):
   - [Catppuccin for YouTube](src/catppuccin.user.css?raw=1)
 - <details><summary> alternative installs: </summary>
 
   - [userstyles.world](https://userstyles.world/style/8932/youtube-catppuccin)
 </details>
 
-4. Choose Your Theme, accent color, subscribe and join buttons by Setting Theme in Stylus Options
+3. Choose Your Theme, accent color, subscribe and join buttons by Setting Theme in Stylus Options
 
 
 ## 🙋 FAQ
@@ -71,9 +63,6 @@ A: It is there incase you have an OLED display, if you have one you might want t
 ### 🌟 Contributors & Ex Maintainers
 - [rubyowo](https://github.com/rubyowo) - The great unification
 - [Elkrien](https://github.com/elkrien) - v1.0.0 youtube theme
-
-### 🌟 Special thanks to
-- [Artilate](https://github.com/artilate/youtube) - This theme is made by modification of great YouTube rose pine theme
 
 &nbsp;
 
