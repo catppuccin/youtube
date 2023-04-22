@@ -3,7 +3,7 @@
 @name YouTube Catppuccin Less
 @namespace github.com/isabelroses/youtube
 @homepageURL https://github.com/isabelroses/youtube
-@version 2.4.10
+@version 2.4.11
 @updateURL https://github.com/isabelroses/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -38,8 +38,7 @@
 
     /* buttons look nicer */
     #join-color(@join-color) when (@join-color =1) {
-        .yt-spec-button-shape-next--mono[aria-label="Join this channel"]
-        .yt-spec-button-shape-next--mono[aria-label="Join this channel"]:hover {
+        .yt-spec-button-shape-next--mono[aria-label="Join this channel"] .yt-spec-button-shape-next--mono[aria-label="Join this channel"]:hover {
             background-color: @mantle !important;
             border-color: @mantle !important;
             color: @text !important;
@@ -388,7 +387,7 @@
         #guide-section-title.ytd-guide-section-renderer {
             color: @text !important;
         }
-        
+
         #endpoint.yt-simple-endpoint.ytd-guide-entry-renderer {
             color: @text !important;
             &:hover {
@@ -403,7 +402,7 @@
                 background-color: @surface0 !important;
             }
         }
-        
+
         ytd-guide-entry-renderer {
             &:hover {
                 background-color: @surface1 !important;
@@ -1004,6 +1003,8 @@
             background-color: @surface0 !important;
         }
 
+        .ytp-panel-footer,
+        .ytp-panel-footer-content,
         .index-message.ytd-playlist-panel-renderer,
         .light-text.ytd-playlist-segment-renderer,
         #contributor.ytd-playlist-video-renderer {
@@ -1390,14 +1391,6 @@
             }
         }
 
-        /* unsubscribe confirm dialog */
-        .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text {
-            color: @accent-colour !important;
-            &:hover {
-                background-color: var(--yt-spec-10-percent-layer) !important;
-            }
-        }
-
         /* join button */
         .yt-spec-button-shape-next--mono[aria-label="Join this channel"],
         .yt-spec-button-shape-next--mono[aria-label="Join this channel"]:hover {
@@ -1410,11 +1403,17 @@
         ytd-offline-promo-renderer.ytd-popup-container yt-button-renderer#action-button .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
             background-color: @accent-colour !important;
             color: @text !important;
+            &:hover {
+                background-color: @accent-colour !important;
+            }
         }
 
         /* share panel */
         yt-third-party-network-section-renderer.ytd-unified-share-panel-renderer yt-button-renderer#copy-button .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
             color: @base !important;
+            &:hover {
+                background-color: @base !important;
+            }
         }
 
         /* Thanks panel */
@@ -1422,6 +1421,9 @@
         yt-button-renderer#confirm-button.yt-confirm-dialog-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
             background-color: @accent-colour !important;
             color: @base !important;
+            &:hover {
+                background-color: @accent-colour !important;
+            }
         }
 
         /* Toast notification */
@@ -1588,6 +1590,10 @@
             color: @accent-colour !important;
         }
 
+        yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string {
+            color: @subtext1 !important;
+        }
+
         /* Dropdown */
         .dropdown-content.style-scope.ytd-popup-container > *,
         tp-yt-paper-listbox,
@@ -1599,7 +1605,7 @@
         .ytd-menu-service-item-download-renderer:hover {
             background: @surface2 !important;
         }
-        
+
         tp-yt-paper-item.ytd-menu-service-item-renderer:hover {
             background: @surface0 !important;
             &[is-selected] {
@@ -1609,7 +1615,7 @@
                 background: @surface2 !important;
             }
         }
-        
+
         a.ytd-menu-navigation-item-renderer:hover,
         tp-yt-paper-listbox.yt-dropdown-menu .iron-selected.yt-dropdown-menu,
         tp-yt-paper-listbox.yt-dropdown-menu tp-yt-paper-item.yt-dropdown-menu:hover {
@@ -2645,6 +2651,31 @@
             }
             &:hover {
                 background-color: @surface1 !important;
+                .yt-spec-touch-feedback-shape__fill,
+                .yt-spec-button-shape-next--filled {
+                    background-color: @accent-colour !important;
+                    .yt-core-attributed-string {
+                        color: @base !important;
+                    }
+                }
+            }
+            .yt-spec-button-shape-next--text {
+                &:hover {
+                    background-color: @surface0 !important;
+                }
+            }
+            .yt-spec-button-shape-next--tonal,
+            .yt-spec-touch-feedback-shape__tonal {
+                background: @mantle !important;
+                .yt-core-attributed-string {
+                    color: @text !important;
+                }
+                &:hover {
+                    background-color: @mantle !important;
+                    .yt-core-attributed-string {
+                        color: @text !important;
+                    }
+                }
             }
             .yt-spec-touch-feedback-shape__fill,
             .yt-spec-button-shape-next--filled {
@@ -2659,6 +2690,23 @@
                     }
                 }
             }
+            &[aria-label*="1 reply"],
+            &[aria-label*="replies"] {
+                background-color: transparent !important;
+                &:hover {
+                    background-color: @surface1 !important;
+                }
+                .yt-core-attributed-string {
+                    color: @accent-colour !important;
+                }
+            }
+        }
+
+        .yt-spec-button-shape-next--call-to-action[aria-label^="Connect"] {
+            background: @accent-colour !important;
+            .yt-spec-button-shape-next--button-text-content .yt-core-attributed-string {
+                color: @base !important;
+            }
         }
 
         .yt-spec-button-shape-next--disabled {
@@ -2669,31 +2717,6 @@
             .yt-spec-button-shape-next--button-text-content {
                 .yt-core-attributed-string {
                     color: @subtext0 !important;
-                }
-            }
-        }
-
-        .yt-spec-button-shape-next--overlay,
-        .yt-spec-button-shape-next--call-to-action,
-        .yt-spec-button-shape-next--mono {
-            &[aria-pressed="true"] {
-                background-color: @surface0 !important;
-            }
-            &:hover {
-                background-color: @surface1 !important;
-            }
-
-            .yt-spec-button-shape-next--tonal,
-            .yt-spec-touch-feedback-shape__tonal {
-                background: @mantle !important;
-                .yt-core-attributed-string {
-                    color: @text !important;
-                }
-                &:hover {
-                    background-color: @mantle !important;
-                    .yt-core-attributed-string {
-                        color: @text !important;
-                    }
                 }
             }
         }
@@ -2727,6 +2750,9 @@
         .style-scope.ytd-donation-shelf-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
             background-color: @accent-colour !important;
             color: @base !important;
+            &:hover {
+                background-color: @accent-colour !important;
+            }
         }
 
         .yt-spec-button-shape-next[aria-label="Reply"] {
@@ -2780,6 +2806,7 @@
         .yt-spec-button-shape-next--mono[aria-label*="Cancel"] .yt-spec-button-shape-next--button-text-content {
             color: @text !important;
         }
+
         .yt-spec-touch-feedback-shape--touch-response {
             &:hover {
                 .yt-spec-touch-feedback-shape__fill {
@@ -3824,6 +3851,11 @@
             color: @overlay2 !important;
         }
 
+        /* connect accounts */
+        ytd-gaming-account-link-setting-renderer {
+            background-color: @surface0 !important;
+        }
+
         /* other text */
         #text {
             .ytd-page-introduction-renderer,
@@ -4059,6 +4091,9 @@
         /* shorts comments */
         ytd-engagement-panel-section-list-renderer {
             background: @mantle !important;
+            ytd-engagement-panel-title-header-renderer {
+                background: @mantle !important;
+            }
             #contents {
                 background: @base !important;
             }
@@ -4222,8 +4257,8 @@
             color: @text !important;
         }
 
-        ytd-author-comment-badge-renderer {
-            background-color: @surface0!important;
+        ytd-author-comment-badge-renderer[creator] {
+            background-color: @surface0 !important;
         }
 
         #content-text.ytd-comment-renderer,
@@ -4263,6 +4298,9 @@
         /* comment button */
         ytd-button-renderer#submit-button.ytd-commentbox .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled {
             background-color: @accent-colour !important;
+            &:hover {
+                background-color: @accent-colour !important;
+            }
         }
 
         .yt-pdg-comment-chip-renderer svg g path {
@@ -4300,7 +4338,7 @@
         }
 
         /* Author verified badge in comments */
-        ytd-author-comment-badge-renderer:not(.creator) #icon.ytd-author-comment-badge-renderer {
+        ytd-author-comment-badge-renderer:not([creator]) #icon.ytd-author-comment-badge-renderer {
             fill: @accent-colour !important;
         }
 
@@ -4694,14 +4732,22 @@
         @mantle: @catppuccin[@@lookup][@mantle];
         @crust: @catppuccin[@@lookup][@crust];
         @accent-colour: @catppuccin[@@lookup][@@accent];
-        
-        &, html, html[dark], html[dark][dark], &[dark], &[light], [light], html[light], html[light][light] {
+
+        &,
+        html,
+        html[dark],
+        html[dark][dark],
+        &[dark],
+        &[light],
+        [light],
+        html[light],
+        html[light][light] {
             /* disable */
             --yt-spec-black-pure-alpha-80: (null) !important;
             --yt-spec-black-pure-alpha-60: (null) !important;
             --yt-spec-black-1-alpha-98: (null) !important;
             --yt-spec-black-1-alpha-95: (null) !important;
-            
+
             /* text */
             --yt-spec-text-primary: @text !important;
             --ytcp-text-primary: @text !important;
@@ -4711,12 +4757,12 @@
             --ytcp-text-secondary: @subtext0 !important;
             --ytcp-text-disabled: @subtext1 !important;
             --ytcp-overlay-text-primary: @overlay2 !important;
-            
+
             /* main bg */
             --ytcp-general-background-a: @base !important;
             --yt-spec-base-background: @base !important;
             --yt-spec-black-3: @base !important;
-            
+
             /* secondary bg */
             --yt-spec-brand-background-solid: @mantle !important;
             --ytcp-brand-background-solid: @mantle !important;
@@ -4724,25 +4770,25 @@
             --ytcp-general-background-b: @mantle !important;
             --ytcp-analytics-reach-background: @mantle !important;
             --yt-spec-black-2: @mantle !important;
-            
-            
+
+
             /* additonal bg */
             --ytcp-general-background-c: @crust !important;
-            
+
             /* menu */
             --ytcp-menu-background: @surface0 !important;
-            
+
             /* card borders */
             --ytcp-container-border-color: @surface0 !important;
             --ytcp-container-hovered-border-color: @surface0 !important;
             --ytcp-line-divider-solid: @surface0 !important;
             --ytcp-container-border-color-inverse: @subtext0 !important;
             --ytcp-line-divider-solid-inverse: @subtext0 !important;
-                        
+
             /* links */
             --ytcp-call-to-action: @sapphire !important;
             --ytcp-call-to-action-inverse: @mantle !important;
-            
+
             /* buttons */
             --ytcp-call-to-action-raised-background: @accent-colour !important;
             --yt-spec-brand-button-background: @accent-colour !important;
@@ -4751,10 +4797,10 @@
             --ytcp-call-to-action-raised-background-inverse: @base !important;
             --ytcp-call-to-action-raised-disabled-inverse: @surface2 !important;
             --ytcp-call-to-action-raised-disabled-background-inverse: @overlay2 !important;
-            
+
             /* dropdown */
             --yt-spec-brand-background-primary: @surface0 !important;
-            
+
             /* icons */
             --yt-compact-link-icon-color: @overlay2 !important;
             --ytcp-icon-active: @accent-colour !important;
@@ -4762,7 +4808,7 @@
             --ytcp-icon-disabled: @overlay2 !important;
             --ytcp-icon-active-inverse: @overlay1 !important;
             --ytcp-icon-disabled-inverse: @subtext1 !important;
-            
+
             /* colours */
             --ytcp-error-red: @red !important;
             --ytcp-badge-red: @red !important;
@@ -4799,8 +4845,8 @@
             --ytmus-genre-primary-orange: @maroon !important;
             --ytmus-genre-primary-sky: @sky !important;
             --ytmus-genre-primary-sky-inverse: @sky !important;
-                
-            
+
+
             /* misc */
             --yt-spec-badge-chip-background: @surface1 !important;
             --ytcp-focus-inverse: @accent-colour !important;
@@ -4814,8 +4860,9 @@
         ytcp-button.destructive.ytls-error-dialog {
             color: @base !important;
         }
-        
-        yt-formatted-string.ytls-error-dialog, tp-yt-iron-icon.ytls-error-dialog {
+
+        yt-formatted-string.ytls-error-dialog,
+        tp-yt-iron-icon.ytls-error-dialog {
             color: @text !important;
         }
     }
