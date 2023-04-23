@@ -3,7 +3,7 @@
 @name YouTube Catppuccin
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 2.2.0
+@version 2.2.1
 @updateURL https://github.com/catppuccin/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -1690,6 +1690,16 @@
                 .ytp-menuitem-label {
                     box-shadow: inset -2px -2px 0 @accent-colour, inset 0 2px 0 @accent-colour !important;
                 }
+            }
+        }
+        
+        /* Stats for nerds */
+        div.ytp-menuitem:nth-child(7) > div:nth-child(1) > svg:nth-child(1) {
+            > path:nth-child(2) {
+                fill: @text !important;
+            }
+            > path:nth-child(1){
+                fill: transparent !important;
             }
         }
 
@@ -4392,6 +4402,29 @@
             }
             .uvFeedbackLegaltextroot a {
                 color: @accent-colour !important;
+            }
+        }
+        
+        /* Yotube Enhancer Extention */
+        .efyt-control-bar{
+            background: @surface0!important;
+            * {
+                fill: @text !important;
+                color: @text !important;
+                
+            }
+        }
+        .efyt-control-bar-tooltip{
+            background: @surface1!important;
+            color: @text !important;
+        }
+        #efyt-progress::-moz-progress-bar{
+            background-color: @accent-colour !important;
+        }
+        #efyt-close-mini-player svg{
+            fill: @crust !important;
+            &:hover{
+                fill: @text !important;
             }
         }
     }
