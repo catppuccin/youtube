@@ -3,7 +3,7 @@
 @name YouTube Catppuccin
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 2.2.1
+@version 2.2.2
 @updateURL https://github.com/catppuccin/youtube/raw/main/src/catppuccin.user.css
 @description Soothing pastel theme for YouTube
 @author isabelroses
@@ -525,12 +525,18 @@
 
         /* poll results */
         /* your selection */
-        tp-yt-paper-item.ytd-backstage-poll-renderer[selected] {
-            .choice-info .choice-text {
-                color: @text !important;
-            }
+        tp-yt-paper-item.ytd-backstage-poll-renderer {
             .progress-bar.ytd-backstage-poll-renderer {
-                background-color: @accent-colour !important;
+                background-color: @surface1 !important;
+            }
+            &[selected] {
+                .choice-info .choice-text {
+                    color: @text !important;
+                }
+                .progress-bar.ytd-backstage-poll-renderer {
+                    background-color: @accent-colour !important;
+                    opacity: 0.7;
+                }
             }
         }
 
@@ -1692,13 +1698,13 @@
                 }
             }
         }
-        
+
         /* Stats for nerds */
         div.ytp-menuitem:nth-child(7) > div:nth-child(1) > svg:nth-child(1) {
             > path:nth-child(2) {
                 fill: @text !important;
             }
-            > path:nth-child(1){
+            > path:nth-child(1) {
                 fill: transparent !important;
             }
         }
@@ -4404,26 +4410,25 @@
                 color: @accent-colour !important;
             }
         }
-        
+
         /* Yotube Enhancer Extention */
-        .efyt-control-bar{
+        .efyt-control-bar {
             background: @surface0!important;
             * {
                 fill: @text !important;
                 color: @text !important;
-                
             }
         }
-        .efyt-control-bar-tooltip{
+        .efyt-control-bar-tooltip {
             background: @surface1!important;
             color: @text !important;
         }
-        #efyt-progress::-moz-progress-bar{
+        #efyt-progress::-moz-progress-bar {
             background-color: @accent-colour !important;
         }
-        #efyt-close-mini-player svg{
+        #efyt-close-mini-player svg {
             fill: @crust !important;
-            &:hover{
+            &:hover {
                 fill: @text !important;
             }
         }
