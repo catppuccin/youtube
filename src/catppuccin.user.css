@@ -1193,6 +1193,10 @@
             background-color: @surface0 !important;
         }
 
+        #cinematics > div > canvas{
+            visibility: hidden;
+        }
+
         #name:hover {
             color: @accent-colour !important;
         }
