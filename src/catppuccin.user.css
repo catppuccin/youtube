@@ -2,8 +2,7 @@
 @name YouTube Catppuccin
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 3.0.0
-@updateURL https://github.com/catppuccin/youtube/raw/main/src/catppuccin.user.css
+@version 3.0.1
 @description Soothing pastel theme for YouTube
 @author isabelroses
 @license MIT
@@ -12,6 +11,7 @@
 @var select darkTheme "Dark Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
 @var select accentColour  "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve", "red:Red*", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire", "sky:Sky", "lavender:Lavender", "subtext0:Grey"]
 @var checkbox oledOn "Enable black bars" 0
+@var checkbox logo "Logo fix" 0
 ==/UserStyle== */
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
@@ -29,6 +29,21 @@
   #oled(@oled) when (@oled =0) {
     #ytd-player #container {
       background: @base !important;
+    }
+  }
+
+  #logofix(@logo) when (@logo =1) {
+    /* logo */
+    ytd-topbar-logo-renderer.style-scope a svg > g,
+    svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) {
+      > g:nth-child(1) {
+        > path:nth-child(1) {
+          fill: @accent-colour !important;
+        }
+        > path:nth-child(2) {
+          fill: @base !important;
+        }
+      }
     }
   }
 
@@ -359,6 +374,10 @@
       --yt-lightsource-secondary-title-color: @subtext0 !important;
     }
 
+    yt-icon.ytd-pinned-comment-badge-renderer {
+      fill: @text !important;
+    }
+
     .yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--segmented-start::after {
       background: @overlay0 !important;
     }
@@ -384,7 +403,7 @@
         z-index: -1;
       }
     }
-    
+
     /* new videos dot */
     #newness-dot {
       background-color: @accent-colour !important;
@@ -428,6 +447,17 @@
       }
     }
 
+    /* logo */
+    ytd-topbar-logo-renderer.style-scope a svg > g,
+    svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) {
+      > path:nth-child(1) {
+        fill: @accent-colour !important;
+      }
+      > path:nth-child(2) {
+        fill: @base !important;
+      }
+    }
+
     /* search results */
     .sbqs_c::before {
       filter: invert(1);
@@ -466,7 +496,7 @@
     .sbfl_a {
       color: @subtext0 !important;
     }
-    
+
     /* Keyboard select text color and hover text color */
     .sbsb_c:hover .sbqs_c,
     .sbsb_c.gsfs.sbsb_d .sbqs_c {
@@ -475,17 +505,6 @@
 
     .ytp-swatch-background-color {
       background-color: @accent-colour !important;
-    }
-
-    /* logo */
-    ytd-topbar-logo-renderer.style-scope a svg > g,
-    svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) {
-        > path:nth-child(1) {
-          fill: @accent-colour !important;
-        }
-        > path:nth-child(2) {
-          fill: @base !important;
-        }
     }
 
     /* exmplation box */
@@ -523,6 +542,49 @@
     .iv-branding .iv-branding-context-name {
       color: @text !important;
       text-shadow: none !important;
+    }
+
+    /* Popup for when you hover over the channel avatar in the video */
+    .iv-branding .branding-context-container-inner {
+      background-color: @base !important;
+    }
+
+    /* Cards */
+    .iv-drawer-content {
+      background-color: fadeout(@mantle, 5%) !important;
+    }
+
+    .iv-drawer-header-text {
+      color: @text !important;
+    }
+
+    .iv-card-content,
+    .ytp-ce-expanding-overlay-background,
+    .ytp-cards-teaser .ytp-cards-teaser-text,
+    .ytp-cards-teaser .ytp-cards-teaser-box {
+      background-color: @base !important;
+    }
+
+    .ytp-cards-teaser .ytp-cards-teaser-box,
+    .iv-card-image {
+      border: 0px !important;
+    }
+
+    .iv-card-content > :first-child,
+    .html5-video-player a,
+    .iv-card h2,
+    .ytp-cards-teaser .ytp-cards-teaser-text {
+      color: @text !important;
+    }
+    
+    /*Player tooltip background*/
+    .ytp-tooltip-text {
+        background: @surface0 !important
+    }
+
+    .iv-card:hover .iv-card-primary-link,
+    .ytp-ce-website-title {
+      color: @accent-colour !important;
     }
 
     .ytp-popup {
