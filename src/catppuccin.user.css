@@ -2,7 +2,7 @@
 @name YouTube Catppuccin
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 3.0.1
+@version 3.0.2
 @description Soothing pastel theme for YouTube
 @author isabelroses
 @license MIT
@@ -19,10 +19,12 @@
   :root[dark] {
     #catppuccin(@darkTheme, @accentColour);
     #oled(@oledOn);
+    #logofix(@logo);
   }
   :root {
     #catppuccin(@lightTheme, @accentColour);
     #oled(@oledOn);
+    #logofix(@logo);
   }
 
   /* for oled monitors */
@@ -374,6 +376,15 @@
       --yt-lightsource-secondary-title-color: @subtext0 !important;
     }
 
+    yt-live-chat-renderer {
+      --yt-emoji-picker-renderer-height: 180px;
+      --yt-button-default-text-color: @text !important;
+      --yt-button-default-background-color: @base !important;
+      --yt-button-dark-text-color: @base !important;
+      --yt-button-dark-background-color: @accent-colour !important;
+      --yt-button-payment-background-color: @accent-colour ! important;
+    }
+
     yt-icon.ytd-pinned-comment-badge-renderer {
       fill: @text !important;
     }
@@ -455,6 +466,14 @@
       }
       > path:nth-child(2) {
         fill: @base !important;
+      }
+    }
+
+    /* link */
+    .yt-core-attributed-string__link--call-to-action-color {
+      color: @sapphire !important;
+      &:hover {
+        color: @teal !important;
       }
     }
 
@@ -576,10 +595,10 @@
     .ytp-cards-teaser .ytp-cards-teaser-text {
       color: @text !important;
     }
-    
+
     /*Player tooltip background*/
     .ytp-tooltip-text {
-        background: @surface0 !important
+      background: @surface0 !important
     }
 
     .iv-card:hover .iv-card-primary-link,
