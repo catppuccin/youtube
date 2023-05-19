@@ -2,7 +2,7 @@
 @name YouTube Catppuccin
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 3.0.2
+@version 3.0.3
 @description Soothing pastel theme for YouTube
 @author isabelroses
 @license MIT
@@ -654,6 +654,8 @@
       --ytd-author-comment-badge-background-color: @surface0 !important;
       --ytd-author-comment-badge-name-color: @text !important;
       --ytd-author-comment-badge-icon-color: @text !important;
+      padding-right: 6px;
+      padding-left: 8px;
     }
 
     /* badges e.g. popular */
