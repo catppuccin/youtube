@@ -2,7 +2,7 @@
 @name YouTube Catppuccin
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 3.0.2
+@version 3.0.3
 @description Soothing pastel theme for YouTube
 @author isabelroses
 @license MIT
@@ -308,6 +308,11 @@
       --sb-grey-bg-color: @base !important;
       --sb-grey-fg-color: @subtext0 !important;
       --sb-red-bg-color: @accent-colour !important;
+    }
+
+	/* Ambient mode fix */
+	#cinematics > div > canvas{
+      visibility: hidden;
     }
 
     /* genral colors */
