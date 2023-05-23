@@ -659,6 +659,8 @@
       --ytd-author-comment-badge-background-color: @surface0 !important;
       --ytd-author-comment-badge-name-color: @text !important;
       --ytd-author-comment-badge-icon-color: @text !important;
+      padding-right: 6px;
+      padding-left: 8px;
     }
 
     /* badges e.g. popular */
