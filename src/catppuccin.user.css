@@ -2,7 +2,7 @@
 @name YouTube Catppuccin
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 3.0.3
+@version 3.0.4
 @description Soothing pastel theme for YouTube
 @author isabelroses
 @license MIT
@@ -10,8 +10,8 @@
 @var select lightTheme "Light Theme" ["latte:Latte*", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha"]
 @var select darkTheme "Dark Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
 @var select accentColour  "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve", "red:Red*", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire", "sky:Sky", "lavender:Lavender", "subtext0:Grey"]
+@var select logo "Logo" ["on*", "off", "alternate"]
 @var checkbox oledOn "Enable black bars" 0
-@var checkbox logo "Logo fix" 0
 ==/UserStyle== */
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 
@@ -19,12 +19,12 @@
   :root[dark] {
     #catppuccin(@darkTheme, @accentColour);
     #oled(@oledOn);
-    #logofix(@logo);
+    #logo(@logo);
   }
   :root {
     #catppuccin(@lightTheme, @accentColour);
     #oled(@oledOn);
-    #logofix(@logo);
+    #logo(@logo);
   }
 
   /* for oled monitors */
@@ -34,17 +34,35 @@
     }
   }
 
-  #logofix(@logo) when (@logo =1) {
-    /* logo */
-    ytd-topbar-logo-renderer.style-scope a svg > g,
-    svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) {
-      > g:nth-child(1) {
+  #logo(@logo) {
+    & when (@logo =on) {
+      ytd-topbar-logo-renderer.style-scope a svg > g,
+      svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) {
         > path:nth-child(1) {
           fill: @accent-colour !important;
         }
-        > path:nth-child(2) {
+        path[fill="white"] {
           fill: @base !important;
         }
+      }
+    }
+    & when (@logo =alternate) {
+      ytd-topbar-logo-renderer.style-scope a svg > g,
+      svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) {
+        > g:nth-child(1) {
+          > path:nth-child(1) {
+            fill: @accent-colour !important;
+          }
+          > path:nth-child(2) {
+            fill: @base !important;
+          }
+        }
+      }
+    }
+    & when (@logo =off) {
+      ytd-topbar-logo-renderer,
+      svg.ytd-consent-bump-v2-lightbox {
+        display: none;
       }
     }
   }
@@ -310,11 +328,6 @@
       --sb-red-bg-color: @accent-colour !important;
     }
 
-	/* Ambient mode fix */
-	#cinematics > div > canvas{
-      visibility: hidden;
-    }
-
     /* genral colors */
     &:not(.style-scope) {
       --primary-text-color: @text !important;
@@ -459,17 +472,6 @@
     .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
       background-color: @accent-colour !important;
       .yt-spec-button-shape-next__icon yt-icon svg g path {
-        fill: @base !important;
-      }
-    }
-
-    /* logo */
-    ytd-topbar-logo-renderer.style-scope a svg > g,
-    svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) {
-      > path:nth-child(1) {
-        fill: @accent-colour !important;
-      }
-      > path:nth-child(2) {
         fill: @base !important;
       }
     }
@@ -630,8 +632,11 @@
     .badge-style-type-live-now-alternate,
     ytd-thumbnail-overlay-time-status-renderer[overlay-style="LIVE"] {
       color: @crust !important;
-      yt-icon svg g path {
-        fill: @crust !important;
+      yt-icon svg {
+        g path,
+        path {
+          fill: @crust !important;
+        }
       }
     }
     .ytp-live-badge {
@@ -661,6 +666,11 @@
       --ytd-author-comment-badge-icon-color: @text !important;
       padding-right: 6px;
       padding-left: 8px;
+    }
+
+    /* disable ambient mode */
+    #cinematics > div > canvas {
+      visibility: hidden;
     }
 
     /* badges e.g. popular */
