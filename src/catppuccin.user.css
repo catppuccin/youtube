@@ -2,7 +2,7 @@
 @name YouTube Catppuccin
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 3.0.4
+@version 3.0.5
 @description Soothing pastel theme for YouTube
 @author isabelroses
 @license MIT
@@ -10,7 +10,7 @@
 @var select lightTheme "Light Theme" ["latte:Latte*", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha"]
 @var select darkTheme "Dark Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
 @var select accentColour  "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve", "red:Red*", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire", "sky:Sky", "lavender:Lavender", "subtext0:Grey"]
-@var select logo "Logo" ["on*", "off", "alternate"]
+@var checkbox logo "Logo" 0
 @var checkbox oledOn "Enable black bars" 0
 ==/UserStyle== */
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!consent\\.)(?!vr\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
@@ -35,31 +35,16 @@
   }
 
   #logo(@logo) {
-    & when (@logo =on) {
-      ytd-topbar-logo-renderer.style-scope a svg > g,
-      svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) {
-        > path:nth-child(1) {
-          fill: @accent-colour !important;
-        }
-        path[fill="white"] {
-          fill: @base !important;
-        }
+    ytd-topbar-logo-renderer.style-scope a svg > g,
+    svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) {
+      path[fill="#FF0000"] {
+        fill: @accent-colour !important;
+      }
+      path[fill="white"] {
+        fill: @base !important;
       }
     }
-    & when (@logo =alternate) {
-      ytd-topbar-logo-renderer.style-scope a svg > g,
-      svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) {
-        > g:nth-child(1) {
-          > path:nth-child(1) {
-            fill: @accent-colour !important;
-          }
-          > path:nth-child(2) {
-            fill: @base !important;
-          }
-        }
-      }
-    }
-    & when (@logo =off) {
+    & when (@logo =1) {
       ytd-topbar-logo-renderer,
       svg.ytd-consent-bump-v2-lightbox {
         display: none;
