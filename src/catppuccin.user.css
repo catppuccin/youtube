@@ -2,7 +2,7 @@
 @name YouTube Catppuccin
 @namespace github.com/catppuccin/youtube
 @homepageURL https://github.com/catppuccin/youtube
-@version 3.0.7
+@version 3.0.8
 @description Soothing pastel theme for YouTube
 @author isabelroses
 @license MIT
@@ -198,7 +198,7 @@
       --yt-spec-assistive-feed-themed-gradient-2: @lavender !important;
       --yt-spec-assistive-feed-themed-gradient-3: @red !important;
       --yt-spec-brand-background-solid: @base !important;
-      --yt-spec-brand-background-primary: @base !important;
+      --yt-spec-brand-background-primary: @surface0 !important;
       --yt-spec-brand-background-secondary: @mantle !important;
       --yt-spec-general-background-a: @base !important;
       --yt-spec-general-background-b: @mantle !important;
