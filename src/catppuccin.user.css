@@ -387,7 +387,7 @@
       --yt-button-dark-background-color: @accent-colour !important;
       --yt-button-payment-background-color: @accent-colour ! important;
     }
-
+    
     yt-icon.ytd-pinned-comment-badge-renderer * {
       fill: @text !important;
     }
@@ -470,7 +470,8 @@
     }
 
     /* search results */
-    .sbqs_c::before {
+    .sbpqs_a:before,
+    .sbqs_c:before {
       filter: invert(1);
     }
 
@@ -506,6 +507,10 @@
 
     .sbfl_a {
       color: @subtext0 !important;
+    }
+    
+    .sbsb_i {
+      color: @subtext0;
     }
 
     /* Keyboard select text color and hover text color */
